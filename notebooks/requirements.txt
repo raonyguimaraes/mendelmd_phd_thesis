@@ -1,0 +1,5 @@
+numpy
+cogent
+MySQL-python
+sqlalchemy
+matplotlib

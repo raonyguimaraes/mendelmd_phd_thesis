@@ -1,0 +1,2182 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.2.23)  4 MAR 2016 09:50
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(/usr/share/texmf-dist/tex/latex/abntex2/abntex2.cls
+Document Class: abntex2 2015/04/28 v1.9.5 abnTeX2
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2015/07/08 v3.7e configurable book, report, article docu
+ment class
+\onelineskip=\skip41
+\lxvchars=\skip42
+\xlvchars=\skip43
+\@memcnta=\count79
+\c@@memmarkcntra=\count80
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Class memoir Info: An `ifetex' package is being emulated on input line 265.
+
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+\stockheight=\skip44
+\stockwidth=\skip45
+\trimtop=\skip46
+\trimedge=\skip47
+
+(/usr/share/texmf-dist/tex/latex/memoir/mem12.clo
+File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
+)
+\binding=\skip48
+\spinemargin=\skip49
+\foremargin=\skip50
+\uppermargin=\skip51
+\lowermargin=\skip52
+\headdrop=\skip53
+\normalrulethickness=\skip54
+\mem@maxheadheight=\skip55
+\mem@maxfootheight=\skip56
+\headwidth=\skip57
+\c@storedpagenumber=\count81
+\memPD=\dimen102
+\m@mabparskip=\skip58
+\thanksmarkwidth=\skip59
+\thanksmarksep=\skip60
+\droptitle=\skip61
+\c@book=\count82
+\c@part=\count83
+\c@chapter=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\beforechapskip=\skip62
+\midchapskip=\skip63
+\afterchapskip=\skip64
+\chapindent=\skip65
+\bottomsectionskip=\skip66
+\secindent=\skip67
+\beforesecskip=\skip68
+\aftersecskip=\skip69
+\subsecindent=\skip70
+\beforesubsecskip=\skip71
+\aftersubsecskip=\skip72
+\subsubsecindent=\skip73
+\beforesubsubsecskip=\skip74
+\aftersubsubsecskip=\skip75
+\paraindent=\skip76
+\beforeparaskip=\skip77
+\afterparaskip=\skip78
+\subparaindent=\skip79
+\beforesubparaskip=\skip80
+\aftersubparaskip=\skip81
+\pfbreakskip=\skip82
+\c@@ppsavesec=\count90
+\c@@ppsaveapp=\count91
+\ragrparindent=\dimen103
+\everylistparindent=\dimen104
+\parsepi=\skip83
+\topsepi=\skip84
+\itemsepi=\skip85
+\parsepii=\skip86
+\topsepii=\skip87
+\topsepiii=\skip88
+\itemsepii=\skip89
+\itemsepiii=\skip90
+\partopsepii=\skip91
+\partopsepiii=\skip92
+\m@msavetopsep=\skip93
+\m@msavepartopsep=\skip94
+\@enLab=\toks14
+\abstitleskip=\skip95
+\absleftindent=\skip96
+\abs@leftindent=\dimen105
+\absrightindent=\skip97
+\absparindent=\skip98
+\absparsep=\skip99
+\c@vslineno=\count92
+\c@poemline=\count93
+\c@modulo@vs=\count94
+\c@memfvsline=\count95
+\vleftskip=\skip100
+\vrightskip=\skip101
+\stanzaskip=\skip102
+\versewidth=\skip103
+\vgap=\skip104
+\vindent=\skip105
+\vleftmargin=\dimen106
+\c@verse=\count96
+\c@chrsinstr=\count97
+\beforepoemtitleskip=\skip106
+\afterpoemtitleskip=\skip107
+\c@poem=\count98
+\beforePoemTitleskip=\skip108
+\midPoemTitleskip=\skip109
+\afterPoemTitleskip=\skip110
+\col@sep=\dimen107
+\extrarowheight=\dimen108
+\NC@list=\toks15
+\extratabsurround=\skip111
+\backup@length=\skip112
+\TX@col@width=\dimen109
+\TX@old@table=\dimen110
+\TX@old@col=\dimen111
+\TX@target=\dimen112
+\TX@delta=\dimen113
+\TX@cols=\count99
+\TX@ftn=\toks16
+\heavyrulewidth=\dimen114
+\lightrulewidth=\dimen115
+\cmidrulewidth=\dimen116
+\belowrulesep=\dimen117
+\belowbottomsep=\dimen118
+\aboverulesep=\dimen119
+\abovetopsep=\dimen120
+\cmidrulesep=\dimen121
+\cmidrulekern=\dimen122
+\defaultaddspace=\dimen123
+\@cmidla=\count100
+\@cmidlb=\count101
+\@aboverulesep=\dimen124
+\@belowrulesep=\dimen125
+\@thisruleclass=\count102
+\@lastruleclass=\count103
+\@thisrulewidth=\dimen126
+\ctableftskip=\skip113
+\ctabrightskip=\skip114
+\abovecolumnspenalty=\count104
+\@linestogo=\count105
+\@cellstogo=\count106
+\@cellsincolumn=\count107
+\crtok=\toks17
+\@mincolumnwidth=\dimen127
+\c@newflo@tctr=\count108
+\mem@margin@floatbox=\box26
+\@contcwidth=\skip115
+\@contindw=\skip116
+\abovecaptionskip=\skip117
+\belowcaptionskip=\skip118
+\subfloattopskip=\skip119
+\subfloatcapskip=\skip120
+\subfloatcaptopadj=\skip121
+\subfloatbottomskip=\skip122
+\subfloatlabelskip=\skip123
+\subfloatcapmargin=\dimen128
+\c@@contsubnum=\count109
+\m@mscap@capbox=\box27
+\m@mscap@fbox=\box28
+\sidecapsep=\dimen129
+\sidecapwidth=\dimen130
+\m@m@tempdima=\dimen131
+\m@mscapraise=\dimen132
+\sidecapraise=\dimen133
+\m@mscapmainwidth=\dimen134
+\m@mscaplkern=\dimen135
+\beforeepigraphskip=\skip124
+\afterepigraphskip=\skip125
+\epigraphwidth=\skip126
+\epigraphrule=\skip127
+LaTeX Info: Redefining \em on input line 7535.
+LaTeX Info: Redefining \emph on input line 7543.
+\tocentryskip=\skip128
+\tocbaseline=\skip129
+\cftparskip=\skip130
+\cftbeforebookskip=\skip131
+\cftbookindent=\dimen136
+\cftbooknumwidth=\dimen137
+\cftbeforepartskip=\skip132
+\cftpartindent=\skip133
+\cftpartnumwidth=\skip134
+\cftbeforechapterskip=\skip135
+\cftchapterindent=\skip136
+\cftchapternumwidth=\skip137
+\cftbeforesectionskip=\skip138
+\cftsectionindent=\skip139
+\cftsectionnumwidth=\skip140
+\cftbeforesubsectionskip=\skip141
+\cftsubsectionindent=\skip142
+\cftsubsectionnumwidth=\skip143
+\cftbeforesubsubsectionskip=\skip144
+\cftsubsubsectionindent=\skip145
+\cftsubsubsectionnumwidth=\skip146
+\cftbeforeparagraphskip=\skip147
+\cftparagraphindent=\skip148
+\cftparagraphnumwidth=\skip149
+\cftbeforesubparagraphskip=\skip150
+\cftsubparagraphindent=\skip151
+\cftsubparagraphnumwidth=\skip152
+\prechapterprecisshift=\dimen138
+\c@maxsecnumdepth=\count110
+\bibindent=\dimen139
+\bibitemsep=\skip153
+\indexcolsep=\skip154
+\indexrule=\skip155
+\indexmarkstyle=\toks18
+\@indexbox=\insert199
+\glossarycolsep=\dimen140
+\glossaryrule=\dimen141
+\sideparvshift=\skip156
+\sideins=\insert198
+\sidebartopsep=\skip157
+\sidebarhsep=\skip158
+\sidebarvsep=\skip159
+\sidebarwidth=\skip160
+\footmarkwidth=\skip161
+\footmarksep=\skip162
+\footparindent=\skip163
+\footinsdim=\skip164
+\footinsv@r=\insert197
+\@mpfootinsv@r=\insert196
+\m@m@k=\count111
+\m@m@h=\dimen142
+\m@mipn@skip=\skip165
+\sidefootins=\insert195
+\sidefootadjust=\skip166
+\sidefootheight=\skip167
+\sidefoothsep=\skip168
+\sidefootvsep=\skip169
+\sidefootwidth=\skip170
+\m@mdownsf=\skip171
+\c@sidefootnote=\count112
+\sidefootmarkwidth=\skip172
+\sidefootmarksep=\skip173
+\sidefootparindent=\skip174
+\c@pagenote=\count113
+\c@pagenoteshadow=\count114
+\mem@pn@lastkern=\skip175
+\every@verbatim=\toks19
+\afterevery@verbatim=\toks20
+\verbatim@line=\toks21
+\tab@position=\count115
+\verbatim@in@stream=\read1
+\verbatimindent=\skip176
+\verbatim@out=\write3
+\bvboxsep=\skip177
+\c@memfbvline=\count116
+\c@bvlinectr=\count117
+\bvnumlength=\skip178
+\fb@frw=\dimen143
+\fb@frh=\dimen144
+\FrameRule=\dimen145
+\FrameSep=\dimen146
+\c@cp@cntr=\count118
+LaTeX Info: Redefining \: on input line 12052.
+LaTeX Info: Redefining \! on input line 12054.
+\c@ism@mctr=\count119
+\c@xsm@mctr=\count120
+\c@csm@mctr=\count121
+\c@ksm@mctr=\count122
+\c@xksm@mctr=\count123
+\c@cksm@mctr=\count124
+\c@msm@mctr=\count125
+\c@xmsm@mctr=\count126
+\c@cmsm@mctr=\count127
+\c@bsm@mctr=\count128
+\c@workm@mctr=\count129
+\c@sheetsequence=\count130
+\c@lastsheet=\count131
+\c@lastpage=\count132
+\c@figure=\count133
+\c@lofdepth=\count134
+\cftbeforefigureskip=\skip179
+\cftfigureindent=\skip180
+\cftfigurenumwidth=\skip181
+\c@table=\count135
+\c@lotdepth=\count136
+\cftbeforetableskip=\skip182
+\cfttableindent=\skip183
+\cfttablenumwidth=\skip184
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package array [2008/09/09] emulated by memoir.
+Package booktabs [2008/07/23] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package dcolumn [2008/07/23] emulated by memoir.
+Package delarray [2008/07/23] emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package ifetex [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package mparhack [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package shortvrb [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package tabularx [2008/07/23] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verbatim [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
+
+(/usr/share/texmf-dist/tex/latex/memoir/mempatch.sty
+Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
+))
+(/usr/share/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+LaTeX Info: Redefining \MakeTextUppercase on input line 47.
+LaTeX Info: Redefining \MakeTextLowercase on input line 50.
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen147
+\Hy@linkcounter=\count137
+\Hy@pagecounter=\count138
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count139
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count140
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen148
+\Fld@menulength=\count141
+\Field@Width=\dimen149
+\Fld@charsize=\dimen150
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count142
+\c@Item=\count143
+\c@Hfootnote=\count144
+)
+(/usr/share/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
+ass
+\c@memhycontfloat=\count145
+\c@Hpagenote=\count146
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count147
+\c@bookmark@seq@number=\count148
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip185
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/bookmark.sty
+Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
+\BKM@id=\count149
+))
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2015/08/03 3.9m The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2015/08/03 3.9m Babel common definitions
+\babel@savecnt=\count150
+\U@D=\dimen151
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/share/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip186
+\enit@outerparindent=\dimen152
+\enit@toks=\toks23
+\enit@inbox=\box29
+\enitdp@description=\count151
+)
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count152
+\calc@Bcount=\count153
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip187
+\calc@Bskip=\skip188
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count154
+\calc@Cskip=\skip189
+)
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 708pt by 455pt
+Spine and edge margins: 85.35826pt and 56.9055pt
+Upper and lower margins: 85.35826pt and 51.68858pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 42.9055pt
+Sidecapsep and sidecapwidth: 7pt and 42pt
+Sidebarhsep and sidebarwidth: 7pt and 42pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 42pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+\c@abntex@bookmarkcounter=\count155
+\cftlastnumwidth=\skip190
+\chapternamenumlength=\skip191
+\ABNTEXcitacaorecuo=\skip192
+\c@alineasi=\count156
+\c@alineasii=\count157
+\enitdp@alineas=\count158
+\c@subalineasi=\count159
+\enitdp@subalineas=\count160
+\c@incisosi=\count161
+\enitdp@incisos=\count162
+\ABNTEXsignwidth=\skip193
+\ABNTEXsignthickness=\skip194
+\ABNTEXsignskip=\skip256
+) (/usr/share/texmf-dist/tex/latex/cmap/cmap.sty
+Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
+)
+(/usr/share/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)<<t1.cmap>>)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+(/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count163
+))
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+)
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
+)
+(/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
+
+
+Class memoir Warning: You are using the caption package with the memoir class. 
+To prepare we will now reset all captioning macros and configurations to kernel
+ defaults, and then let the caption package take over. Please remember to use t
+he caption package interfaces in order to configure your captions. .
+
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen157
+\captionmargin@=\dimen158
+\captionwidth=\dimen159
+\caption@tempdima=\dimen160
+\caption@indent=\dimen161
+\caption@parindent=\dimen162
+\caption@hangindent=\dimen163
+)
+\c@ContinuedFloat=\count164
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count165
+\c@subtable=\count166
+)
+(/usr/share/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks26
+\AP@partial=\box30
+\AP@footins=\box31
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count167
+\lst@gtempboxa=\box32
+\lst@token=\toks27
+\lst@length=\count168
+\lst@currlwidth=\dimen164
+\lst@column=\count169
+\lst@pos=\count170
+\lst@lostspace=\dimen165
+\lst@width=\dimen166
+\lst@newlines=\count171
+\lst@lineno=\count172
+\lst@maxwidth=\dimen167
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count173
+\lst@skipnumbers=\count174
+\lst@framebox=\box33
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count175
+\rotFPtop=\skip257
+\rotFPbot=\skip258
+\rot@float@box=\box34
+\rot@mess@toks=\toks28
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+) (./ufmg.sty)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count176
+\float@exts=\toks29
+\float@box=\box35
+\@float@everytoks=\toks30
+\@floatcapt=\box36
+)
+(/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count177
+)
+(/usr/share/texmf-dist/tex/latex/bera/beramono.sty
+Package: beramono 2004/01/31 (WaS)
+)
+(/usr/share/texmf/tex/latex/minted/minted.sty
+Package: minted 2015/09/09 v2.1 Yet another Pygments shim for LaTeX
+
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count178
+\FV@InFile=\read2
+\FV@TabBox=\box37
+\c@FancyVerbLine=\count179
+\FV@StepNumber=\count180
+\FV@OutFile=\write4
+) (/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
+)
+runsystem(uname -s > "main.w18")...executed.
+
+ (./main.w18)
+runsystem(rm -- "main.w18")...executed.
+
+)
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count181
+)
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write5
+\integerpart=\count182
+\decimalpart=\count183
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count184
+\output=\toks31
+\linenoprevgraf=\count185
+\linenumbersep=\dimen168
+\linenumberwidth=\dimen169
+\c@linenumber=\count186
+\c@pagewiselinenumber=\count187
+\c@LN@truepage=\count188
+\c@internallinenumber=\count189
+\c@internallinenumbers=\count190
+\quotelinenumbersep=\dimen170
+\bframerule=\dimen171
+\bframesep=\dimen172
+\bframebox=\box38
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\minted@appexistsfile=\read3
+\FV@BreakIndent=\dimen173
+\FV@BreakSymbolSepLeft=\dimen174
+\FV@BreakSymbolSepRight=\dimen175
+\FV@BreakSymbolIndentLeft=\dimen176
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 688.
+
+(/usr/share/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 688.
+\FV@BreakSymbolIndentRight=\dimen177
+\c@FancyVerbLineBreakLast=\count191
+\FV@LineBox=\box39
+\FV@LineIndentBox=\box40
+\minted@bgbox=\box41
+\minted@code=\write6
+\c@minted@FancyVerbLineTemp=\count192
+\@float@every@listing=\toks32
+\c@listing=\count193
+)
+runsystem(mkdir -p "_minted-main")...executed.
+
+
+(./_minted-main/default.pygstyle)
+(/usr/share/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2012/07/25 v1.38 Bibliographical back referencing
+)
+(/usr/share/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+Package: abntex2cite 2015/04/28 v1.9.5 abnTeX2
+
+(/usr/share/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+\minimumbiblabelwidth=\skip259
+\ABCIauxlen=\skip260
+\c@ABCIaux=\count194
+\c@ABCImax=\count266
+
+(/usr/share/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\biblabelsep=\skip261
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 618.
+\ABCItoken=\toks33
+)
+Package color Info: Redefining color blue on input line 214.
+Package hyperref Info: Option `colorlinks' set `true' on input line 231.
+\main@idxfile=\write7
+\openout7 = `main.idx'.
+
+
+Writing index file main.idx 
+runsystem(which "pygmentize" && touch "main.aex")...executed.
+
+runsystem(rm "main.aex")...executed.
+
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 254.
+ (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring ON on input line 254.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count267
+)
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 254.
+LaTeX Info: Redefining \ref on input line 254.
+LaTeX Info: Redefining \pageref on input line 254.
+LaTeX Info: Redefining \nameref on input line 254.
+\myptabbox=\box43
+\myptabboxwidth=\skip262
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 254.
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen178
+\scratchbox=\box44
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen179
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks35
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count274
+
+(./_minted-main/default-pyg-prefix.pygstyle)
+<./Pictures/Logo_UFMG.jpg, id=5, 863.225pt x 337.26pt>
+File: ./Pictures/Logo_UFMG.jpg Graphic file (type jpg)
+
+<use ./Pictures/Logo_UFMG.jpg>
+Package pdftex.def Info: ./Pictures/Logo_UFMG.jpg used on input line 265.
+(pdftex.def)             Requested size: 90.99861pt x 35.54971pt.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 282.
+
+ (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)<<ot1.cmap>>
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 282.
+
+ (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)<<oml.cmap>>
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 282
+.
+
+(/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)<<oms.cmap>>
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 282
+.
+
+(/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 282.
+<<omx.cmap>>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 282.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 282.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/Logo_UFMG.jpg>]
+File: ./Pictures/Logo_UFMG.jpg Graphic file (type jpg)
+
+<use ./Pictures/Logo_UFMG.jpg>
+Package pdftex.def Info: ./Pictures/Logo_UFMG.jpg used on input line 309.
+(pdftex.def)             Requested size: 45.50278pt x 17.77486pt.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 309.
+
+ (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.309 \imprimircapa
+                    [1
+
+] [1
+
+
+] [2
+
+
+] [3
+
+] [4
+
+] (./main.lof [5
+
+]) [6] (./main.lot)
+[7
+
+] [8
+
+
+] [9] (./main.toc [10
+
+]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 41.
+ [11] [12] [13]) [14] (./Chapters/Chapter1.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 14.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 14.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 14.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 
+      [1
+
+
+] [2] [3]
+<./Figures/../Figures/Gene_structure.png, id=523, 481.8pt x 75.28125pt>
+File: ./Figures/../Figures/Gene_structure.png Graphic file (type png)
+
+<use ./Figures/../Figures/Gene_structure.png>
+Package pdftex.def Info: ./Figures/../Figures/Gene_structure.png used on input 
+line 53.
+(pdftex.def)             Requested size: 636.99722pt x 99.54039pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 53.
+ [4 <./Figures/../Figures/Gene_structure.png>] [5
+
+
+
+] [6]
+<./Figures/../Figures/fss_filtering_process.png, id=556, 903.375pt x 412.54124p
+t>
+File: ./Figures/../Figures/fss_filtering_process.png Graphic file (type png)
+ <use ./Figures/../Figures/fss_filtering_process.png>
+Package pdftex.def Info: ./Figures/../Figures/fss_filtering_process.png used on
+ input line 105.
+(pdftex.def)             Requested size: 636.99722pt x 290.91086pt.
+ [7 <./Figures/../Figures/fss_filtering_process.png>]
+<./Figures/../Figures/exome_pubmed.png, id=568, 491.58656pt x 269.50688pt>
+File: ./Figures/../Figures/exome_pubmed.png Graphic file (type png)
+
+<use ./Figures/../Figures/exome_pubmed.png>
+Package pdftex.def Info: ./Figures/../Figures/exome_pubmed.png used on input li
+ne 105.
+(pdftex.def)             Requested size: 682.5pt x 374.1899pt.
+
+
+LaTeX Warning: Float too large for page by 2.16434pt on input line 105.
+
+[8 <./Figures/../Figures/exome_pubmed.png (PNG copy)>] [9
+
+
+
+
+
+
+]
+<./Figures/../Figures/Dna-SNP.png, id=587, 417.56pt x 522.95375pt>
+File: ./Figures/../Figures/Dna-SNP.png Graphic file (type png)
+
+<use ./Figures/../Figures/Dna-SNP.png>
+Package pdftex.def Info: ./Figures/../Figures/Dna-SNP.png used on input line 15
+5.
+(pdftex.def)             Requested size: 273.00278pt x 341.92677pt.
+ [10 <./Figures/../Figures/Dna-SNP.png>]
+<./Figures/../Figures/indel.png, id=598, 295.1025pt x 213.79875pt>
+File: ./Figures/../Figures/indel.png Graphic file (type png)
+
+<use ./Figures/../Figures/indel.png>
+Package pdftex.def Info: ./Figures/../Figures/indel.png used on input line 155.
+
+(pdftex.def)             Requested size: 455.0pt x 329.64908pt.
+ [11 <./Figures/../Figures/indel.png>]
+[12
+
+
+
+
+
+
+] (./Tables/table_1000genomes_ancestry.tex) [13] [14]
+<./Figures/../Figures/Personalized_medicine.png, id=662, 542.025pt x 495.8525pt
+>
+File: ./Figures/../Figures/Personalized_medicine.png Graphic file (type png)
+ <use ./Figures/../Figures/Personalized_medicine.png>
+Package pdftex.def Info: ./Figures/../Figures/Personalized_medicine.png used on
+ input line 200.
+(pdftex.def)             Requested size: 409.49722pt x 374.62738pt.
+
+
+LaTeX Warning: Float too large for page by 21.24184pt on input line 200.
+
+[15 <./Figures/../Figures/Personalized_medicine.png>]) (./Chapters/Chapter2.tex
+[16
+
+
+
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 10.
+ (/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 10.
+ [17
+
+])
+(./Chapters/Chapter3.tex [18] [19
+
+] [20] [21]
+<./Figures/../Figures/django_layers.png, id=713, 290.08376pt x 282.05376pt>
+File: ./Figures/../Figures/django_layers.png Graphic file (type png)
+
+<use ./Figures/../Figures/django_layers.png>
+Package pdftex.def Info: ./Figures/../Figures/django_layers.png used on input l
+ine 62.
+(pdftex.def)             Requested size: 409.49722pt x 398.18646pt.
+
+Underfull \hbox (badness 1824) in paragraph at lines 62--62
+[][]|\T1/lmr/m/n/17.28 Nesta fi-gura po-de-mos ob-ser-var a se-pa-ra-ção in-ter
+na do Django en-tre as ca-ma-das
+ []
+
+
+LaTeX Warning: Float too large for page by 48.1609pt on input line 62.
+
+[22 <./Figures/../Figures/django_layers.png>] [23
+
+
+
+]
+<./Figures/fastq_definition.png, id=731, 351.56343pt x 149.05687pt>
+File: ./Figures/fastq_definition.png Graphic file (type png)
+
+<use ./Figures/fastq_definition.png>
+Package pdftex.def Info: ./Figures/fastq_definition.png used on input line 89.
+(pdftex.def)             Requested size: 682.5pt x 289.36784pt.
+ [24 <./Figures/fastq_definition.png>]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 133.
+
+[25
+
+
+
+] <./Figures/sam_file.png, id=754, 435.12563pt x 109.1578pt>
+File: ./Figures/sam_file.png Graphic file (type png)
+
+<use ./Figures/sam_file.png>
+Package pdftex.def Info: ./Figures/sam_file.png used on input line 143.
+(pdftex.def)             Requested size: 682.5pt x 171.2382pt.
+ [26 <./Figures/sam_file.png>]
+<./Figures/vcf_sample.png, id=763, 955.57pt x 606.265pt>
+File: ./Figures/vcf_sample.png Graphic file (type png)
+
+<use ./Figures/vcf_sample.png>
+Package pdftex.def Info: ./Figures/vcf_sample.png used on input line 143.
+(pdftex.def)             Requested size: 545.99861pt x 346.40721pt.
+ [27 <./Figures/vcf_sample.png>] [28
+
+
+
+
+
+
+] [29]
+<./Figures/../Figures/GATK.png, id=794, 662.475pt x 407.5225pt>
+File: ./Figures/../Figures/GATK.png Graphic file (type png)
+
+<use ./Figures/../Figures/GATK.png>
+Package pdftex.def Info: ./Figures/../Figures/GATK.png used on input line 206.
+(pdftex.def)             Requested size: 636.99722pt x 391.87007pt.
+
+
+LaTeX Warning: Float too large for page by 16.48453pt on input line 206.
+
+[30 <./Figures/../Figures/GATK.png (PNG copy)>] [31
+
+
+
+] [32] [33
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]|\T1/lmr/bx/n/12 Grupo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+\T1/lmr/bx/n/12 de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]|\T1/lmr/bx/n/12 Total por
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+\T1/lmr/bx/n/12 Tipo de
+ []
+
+
+Overfull \hbox (35.29466pt too wide) in paragraph at lines 318--318
+ [] 
+ []
+
+[34] [35
+
+]
+
+LaTeX Warning: Float too large for page by 9.09908pt on input line 402.
+
+[36] [37
+
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 425.
+
+
+LaTeX Warning: Float too large for page by 23.6071pt on input line 488.
+
+[38] [39]) (./Chapters/Chapter4.tex [40]
+<./Figures/../Diagramas/gatk_pipelinev2.png, id=900, 1367.1075pt x 1226.5825pt>
+File: ./Figures/../Diagramas/gatk_pipelinev2.png Graphic file (type png)
+<use ./Figures/../Diagramas/gatk_pipelinev2.png>
+Package pdftex.def Info: ./Figures/../Diagramas/gatk_pipelinev2.png used on inp
+ut line 1.
+(pdftex.def)             Requested size: 409.49722pt x 367.39738pt.
+ [41 <./Figures/../Diagramas/gatk_pipelinev2.png (PNG copy)>] [42
+
+
+
+
+] [43]
+Overfull \hbox (10.90811pt too wide) in paragraph at lines 138--138
+ [][] 
+ []
+
+
+Overfull \hbox (10.90811pt too wide) in paragraph at lines 138--138
+ [][] 
+ []
+
+[44
+
+]
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-11071
+6_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_quality.png, id=924, 803.
+0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-
+110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_quality.png Graphic 
+file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-1
+10716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_quality.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_q
+uality.png used on input line 138.
+(pdftex.def)             Requested size: 307.12291pt x 230.34608pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-11071
+6_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_quality.png, id=925, 803.
+0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-
+110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_quality.png Graphic 
+file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-1
+10716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_quality.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_q
+uality.png used on input line 138.
+(pdftex.def)             Requested size: 307.12291pt x 230.34608pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-11071
+6_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequence_quality.png, id=926, 
+803.0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-
+110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequence_quality.png Grap
+hic file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-1
+10716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequence_quality.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequen
+ce_quality.png used on input line 138.
+(pdftex.def)             Requested size: 307.12291pt x 230.34608pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-11071
+6_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequence_quality.png, id=927, 
+803.0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-
+110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequence_quality.png Grap
+hic file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-1
+10716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequence_quality.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequen
+ce_quality.png used on input line 138.
+(pdftex.def)             Requested size: 307.12291pt x 230.34608pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-11071
+6_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_sequence_content.png, id=
+928, 803.0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-
+110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_sequence_content.png
+ Graphic file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-1
+10716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_sequence_content.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_s
+equence_content.png used on input line 138.
+(pdftex.def)             Requested size: 307.12291pt x 230.34608pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-11071
+6_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_sequence_content.png, id=
+929, 803.0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-
+110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_sequence_content.png
+ Graphic file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-1
+10716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_sequence_content.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_s
+equence_content.png used on input line 138.
+(pdftex.def)             Requested size: 307.12291pt x 230.34608pt.
+[45 <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-1
+10716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_quality.png (PNG copy
+)> <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-11
+0716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base_quality.png (PNG copy)
+>] [46 <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads
+1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequence_quality.png (P
+NG copy)> <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-re
+ads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequence_quality.png
+ (PNG copy)>] [47 <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_072
+62011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_base_sequenc
+e_content.png (PNG copy)> <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_
+RDNP_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_base
+_sequence_content.png (PNG copy)>] [48
+
+
+
+
+]
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-11071
+6_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequence_gc_content.png, id=95
+6, 803.0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-
+110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequence_gc_content.png G
+raphic file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-1
+10716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequence_gc_content.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequen
+ce_gc_content.png used on input line 213.
+(pdftex.def)             Requested size: 286.6468pt x 214.9903pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-11071
+6_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequence_gc_content.png, id=95
+7, 803.0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-
+110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequence_gc_content.png G
+raphic file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-1
+10716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequence_gc_content.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequen
+ce_gc_content.png used on input line 213.
+(pdftex.def)             Requested size: 286.6468pt x 214.9903pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-11071
+6_I123_FCC043NABXX_L2_index7_1_fastqc/Images/duplication_levels.png, id=958, 80
+3.0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-
+110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/duplication_levels.png Graphi
+c file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-1
+10716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/duplication_levels.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/duplicatio
+n_levels.png used on input line 213.
+(pdftex.def)             Requested size: 286.6468pt x 214.9903pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-11071
+6_I123_FCC043NABXX_L2_index7_2_fastqc/Images/duplication_levels.png, id=959, 80
+3.0pt x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-
+110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/duplication_levels.png Graphi
+c file (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-1
+10716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/duplication_levels.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/duplicatio
+n_levels.png used on input line 213.
+(pdftex.def)             Requested size: 286.6468pt x 214.9903pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-11071
+6_I123_FCC043NABXX_L2_index7_1_fastqc/Images/kmer_profiles.png, id=960, 803.0pt
+ x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-
+110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/kmer_profiles.png Graphic fil
+e (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-1
+10716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/kmer_profiles.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/kmer_profi
+les.png used on input line 213.
+(pdftex.def)             Requested size: 286.6468pt x 214.9903pt.
+
+<./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-11071
+6_I123_FCC043NABXX_L2_index7_2_fastqc/Images/kmer_profiles.png, id=961, 803.0pt
+ x 602.25pt>
+File: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-
+110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/kmer_profiles.png Graphic fil
+e (type png)
+
+<use ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads2-1
+10716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/kmer_profiles.png>
+Package pdftex.def Info: ./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RD
+NP_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/kmer_profi
+les.png used on input line 213.
+(pdftex.def)             Requested size: 286.6468pt x 214.9903pt.
+ [49 <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-reads1-
+110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/per_sequence_gc_content.png (
+PNG copy)> <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP_07262011-r
+eads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/per_sequence_gc_content
+.png (PNG copy)>] [50 <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDNP
+_07262011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/duplication_
+levels.png (PNG copy)> <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_RDN
+P_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/duplication
+_levels.png (PNG copy)>] [51 <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pe
+na_RDNP_07262011-reads1-110716_I123_FCC043NABXX_L2_index7_1_fastqc/Images/kmer_
+profiles.png (PNG copy)> <./Figures/../Figures/Ot729_index7_Exome_Sergio.Pena_R
+DNP_07262011-reads2-110716_I123_FCC043NABXX_L2_index7_2_fastqc/Images/kmer_prof
+iles.png (PNG copy)>] [52
+
+
+]
+<./Figures/alinhamento_rms/antes_gatk_summary.png, id=982, 468.24937pt x 211.54
+031pt>
+File: ./Figures/alinhamento_rms/antes_gatk_summary.png Graphic file (type png)
+ <use ./Figures/alinhamento_rms/antes_gatk_summary.png>
+Package pdftex.def Info: ./Figures/alinhamento_rms/antes_gatk_summary.png used 
+on input line 284.
+(pdftex.def)             Requested size: 409.49722pt x 185.00693pt.
+
+<./Figures/alinhamento_rms/antes_gatk_mean_base_quality.png, id=983, 480.29437p
+t x 235.63031pt>
+File: ./Figures/alinhamento_rms/antes_gatk_mean_base_quality.png Graphic file (
+type png)
+
+<use ./Figures/alinhamento_rms/antes_gatk_mean_base_quality.png>
+Package pdftex.def Info: ./Figures/alinhamento_rms/antes_gatk_mean_base_quality
+.png used on input line 284.
+(pdftex.def)             Requested size: 409.49722pt x 200.90152pt.
+ [53 <./Figures/alinhamento_rms/antes_gatk_summary.png> <./Figures/alinhamento_
+rms/antes_gatk_mean_base_quality.png>]
+<./Figures/alinhamento_rms/rms_after_gatk_mapping_stats.png, id=989, 469.00218p
+t x 228.10219pt>
+File: ./Figures/alinhamento_rms/rms_after_gatk_mapping_stats.png Graphic file (
+type png)
+
+<use ./Figures/alinhamento_rms/rms_after_gatk_mapping_stats.png>
+Package pdftex.def Info: ./Figures/alinhamento_rms/rms_after_gatk_mapping_stats
+.png used on input line 284.
+(pdftex.def)             Requested size: 409.49722pt x 199.1608pt.
+
+<./Figures/alinhamento_rms/rms_after_gatk_mean_base_quality.png, id=990, 487.06
+969pt x 243.15843pt>
+File: ./Figures/alinhamento_rms/rms_after_gatk_mean_base_quality.png Graphic fi
+le (type png)
+
+<use ./Figures/alinhamento_rms/rms_after_gatk_mean_base_quality.png>
+Package pdftex.def Info: ./Figures/alinhamento_rms/rms_after_gatk_mean_base_qua
+lity.png used on input line 284.
+(pdftex.def)             Requested size: 409.49722pt x 204.43349pt.
+ [54 <./Figures/alinhamento_rms/rms_after_gatk_mapping_stats.png> <./Figures/al
+inhamento_rms/rms_after_gatk_mean_base_quality.png>]
+Overfull \hbox (32.82515pt too wide) in paragraph at lines 284--284
+ [] 
+ []
+
+[55] [56
+
+
+
+]
+<./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.before/emp
+_v_stated.pdf, id=1005, 505.89pt x 505.89pt>
+File: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.befor
+e/emp_v_stated.pdf Graphic file (type pdf)
+
+<use ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.before
+/emp_v_stated.pdf>
+Package pdftex.def Info: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixe
+d.recal.stats.before/emp_v_stated.pdf used on input line 363.
+(pdftex.def)             Requested size: 286.6468pt x 286.65433pt.
+
+<./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after/emp_
+v_stated.pdf, id=1006, 505.89pt x 505.89pt>
+File: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after
+/emp_v_stated.pdf Graphic file (type pdf)
+
+<use ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after/
+emp_v_stated.pdf>
+Package pdftex.def Info: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixe
+d.recal.stats.after/emp_v_stated.pdf used on input line 363.
+(pdftex.def)             Requested size: 286.6468pt x 286.65433pt.
+
+<./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.before/qua
+lity_rep_hist.pdf, id=1007, 505.89pt x 505.89pt>
+File: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.befor
+e/quality_rep_hist.pdf Graphic file (type pdf)
+
+<use ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.before
+/quality_rep_hist.pdf>
+Package pdftex.def Info: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixe
+d.recal.stats.before/quality_rep_hist.pdf used on input line 363.
+(pdftex.def)             Requested size: 286.6468pt x 286.65433pt.
+
+<./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after/qual
+ity_rep_hist.pdf, id=1008, 505.89pt x 505.89pt>
+File: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after
+/quality_rep_hist.pdf Graphic file (type pdf)
+
+<use ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after/
+quality_rep_hist.pdf>
+Package pdftex.def Info: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixe
+d.recal.stats.after/quality_rep_hist.pdf used on input line 363.
+(pdftex.def)             Requested size: 286.6468pt x 286.65433pt.
+
+<./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.before/qua
+l_diff_v_Dinuc.pdf, id=1009, 505.89pt x 505.89pt>
+File: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.befor
+e/qual_diff_v_Dinuc.pdf Graphic file (type pdf)
+
+<use ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.before
+/qual_diff_v_Dinuc.pdf>
+Package pdftex.def Info: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixe
+d.recal.stats.before/qual_diff_v_Dinuc.pdf used on input line 363.
+(pdftex.def)             Requested size: 286.6468pt x 286.65433pt.
+
+<./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after/qual
+_diff_v_Dinuc.pdf, id=1010, 505.89pt x 505.89pt>
+File: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after
+/qual_diff_v_Dinuc.pdf Graphic file (type pdf)
+
+<use ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.after/
+qual_diff_v_Dinuc.pdf>
+Package pdftex.def Info: ./Figures/alinhamento_rms/exome.sorted.dedup.real.fixe
+d.recal.stats.after/qual_diff_v_Dinuc.pdf used on input line 363.
+(pdftex.def)             Requested size: 286.6468pt x 286.65433pt.
+ [57 <./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.befor
+e/emp_v_stated.pdf> <./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.re
+cal.stats.after/emp_v_stated.pdf>] [58 <./Figures/alinhamento_rms/exome.sorted.
+dedup.real.fixed.recal.stats.before/quality_rep_hist.pdf> <./Figures/alinhament
+o_rms/exome.sorted.dedup.real.fixed.recal.stats.after/quality_rep_hist.pdf>] [5
+9 <./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.recal.stats.before/q
+ual_diff_v_Dinuc.pdf> <./Figures/alinhamento_rms/exome.sorted.dedup.real.fixed.
+recal.stats.after/qual_diff_v_Dinuc.pdf>] [60
+
+
+] [61]
+(./Chapters/Chapter4_MendelMD.tex [62
+
+
+
+] [63] [64]
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[]|\T1/lmr/bx/n/12 número
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 94--94
+\T1/lmr/bx/n/12 de re-gis-
+ []
+
+[65] [66
+
+]
+<./Figures/mendelmd/Dashboard.png, id=1106, 3013.2575pt x 1578.89874pt>
+File: ./Figures/mendelmd/Dashboard.png Graphic file (type png)
+
+<use ./Figures/mendelmd/Dashboard.png>
+Package pdftex.def Info: ./Figures/mendelmd/Dashboard.png used on input line 16
+6.
+(pdftex.def)             Requested size: 591.50139pt x 309.91978pt.
+ [67 <./Figures/mendelmd/Dashboard.png>]
+<./Figures/mendelmd/upload.png, id=1111, 994.71625pt x 419.5675pt>
+File: ./Figures/mendelmd/upload.png Graphic file (type png)
+
+<use ./Figures/mendelmd/upload.png>
+Package pdftex.def Info: ./Figures/mendelmd/upload.png used on input line 166.
+(pdftex.def)             Requested size: 682.5pt x 287.88216pt.
+ [68 <./Figures/mendelmd/upload.png>]
+<./Figures/Celery_Shell.png, id=1116, 817.0525pt x 247.92625pt>
+File: ./Figures/Celery_Shell.png Graphic file (type png)
+
+<use ./Figures/Celery_Shell.png>
+Package pdftex.def Info: ./Figures/Celery_Shell.png used on input line 166.
+(pdftex.def)             Requested size: 682.5pt x 207.11037pt.
+ [69 <./Figures/Celery_Shell.png>]
+<./Figures/Celery_annotation.png, id=1122, 1350.04375pt x 545.03625pt>
+File: ./Figures/Celery_annotation.png Graphic file (type png)
+
+<use ./Figures/Celery_annotation.png>
+Package pdftex.def Info: ./Figures/Celery_annotation.png used on input line 166
+.
+(pdftex.def)             Requested size: 682.5pt x 275.5447pt.
+ [70 <./Figures/Celery_annotation.png>]
+[71
+
+
+
+
+
+
+
+
+
+
+
+
+] <./Figures/vcf2csv.png, id=1133, 603.0028pt x 311.66437pt>
+File: ./Figures/vcf2csv.png Graphic file (type png)
+
+<use ./Figures/vcf2csv.png>
+Package pdftex.def Info: ./Figures/vcf2csv.png used on input line 192.
+(pdftex.def)             Requested size: 682.5pt x 352.75206pt.
+ [72 <./Figures/vcf2csv.png>] [73
+
+
+
+]
+<./Figures/mendelmd/annotation_pipeline.png, id=1144, 1125.20375pt x 721.69624p
+t>
+File: ./Figures/mendelmd/annotation_pipeline.png Graphic file (type png)
+ <use ./Figures/mendelmd/annotation_pipeline.png>
+Package pdftex.def Info: ./Figures/mendelmd/annotation_pipeline.png used on inp
+ut line 234.
+(pdftex.def)             Requested size: 545.99861pt x 350.19846pt.
+
+
+LaTeX Warning: Float too large for page by 0.1729pt on input line 234.
+
+[74 <./Figures/mendelmd/annotation_pipeline.png>]
+<./Figures/mendelmd/individuals_view.png, id=1149, 1062.97125pt x 184.69pt>
+File: ./Figures/mendelmd/individuals_view.png Graphic file (type png)
+
+<use ./Figures/mendelmd/individuals_view.png>
+Package pdftex.def Info: ./Figures/mendelmd/individuals_view.png used on input 
+line 234.
+(pdftex.def)             Requested size: 682.5pt x 118.58444pt.
+ [75 <./Figures/mendelmd/individuals_view.png>] [76
+
+
+
+
+
+
+]
+<./Figures/mendelmd/genes.png, id=1161, 1061.9675pt x 408.52625pt>
+File: ./Figures/mendelmd/genes.png Graphic file (type png)
+
+<use ./Figures/mendelmd/genes.png>
+Package pdftex.def Info: ./Figures/mendelmd/genes.png used on input line 291.
+(pdftex.def)             Requested size: 682.5pt x 262.55302pt.
+ [77 <./Figures/mendelmd/genes.png>]
+<./Figures/mendelmd/gene_lists.png, id=1166, 1069.9975pt x 472.76625pt>
+File: ./Figures/mendelmd/gene_lists.png Graphic file (type png)
+
+<use ./Figures/mendelmd/gene_lists.png>
+Package pdftex.def Info: ./Figures/mendelmd/gene_lists.png used on input line 2
+91.
+(pdftex.def)             Requested size: 682.5pt x 301.56664pt.
+ [78 <./Figures/mendelmd/gene_lists.png>] <./Figures/mendelmd/diseases.png, id=
+1171, 950.55125pt x 383.4325pt>
+File: ./Figures/mendelmd/diseases.png Graphic file (type png)
+
+<use ./Figures/mendelmd/diseases.png>
+Package pdftex.def Info: ./Figures/mendelmd/diseases.png used on input line 291
+.
+(pdftex.def)             Requested size: 682.5pt x 275.31645pt.
+ [79 <./Figures/mendelmd/diseases.png>]
+[80
+
+
+
+
+
+
+
+
+
+]
+<./Figures/Filtragem/Step1Individuals.png, id=1183, 930.47626pt x 558.085pt>
+File: ./Figures/Filtragem/Step1Individuals.png Graphic file (type png)
+
+<use ./Figures/Filtragem/Step1Individuals.png>
+Package pdftex.def Info: ./Figures/Filtragem/Step1Individuals.png used on input
+ line 350.
+(pdftex.def)             Requested size: 591.50139pt x 354.78027pt.
+ [81 <./Figures/Filtragem/Step1Individuals.png>]
+<./Figures/Filtragem/Step2Variants.png, id=1189, 917.4275pt x 456.70625pt>
+File: ./Figures/Filtragem/Step2Variants.png Graphic file (type png)
+
+<use ./Figures/Filtragem/Step2Variants.png>
+Package pdftex.def Info: ./Figures/Filtragem/Step2Variants.png used on input li
+ne 350.
+(pdftex.def)             Requested size: 682.5pt x 339.76921pt.
+ [82 <./Figures/Filtragem/Step2Variants.png>]
+<./Figures/Filtragem/Step3Databases.png, id=1194, 919.435pt x 442.65375pt>
+File: ./Figures/Filtragem/Step3Databases.png Graphic file (type png)
+
+<use ./Figures/Filtragem/Step3Databases.png>
+Package pdftex.def Info: ./Figures/Filtragem/Step3Databases.png used on input l
+ine 350.
+(pdftex.def)             Requested size: 682.5pt x 328.5988pt.
+ [83 <./Figures/Filtragem/Step3Databases.png (PNG copy)>] [84
+
+
+
+
+
+
+
+
+
+] [85]
+<./Figures/mendelmd/family_analysis.png, id=1209, 999.735pt x 419.5675pt>
+File: ./Figures/mendelmd/family_analysis.png Graphic file (type png)
+
+<use ./Figures/mendelmd/family_analysis.png>
+Package pdftex.def Info: ./Figures/mendelmd/family_analysis.png used on input l
+ine 428.
+(pdftex.def)             Requested size: 682.5pt x 286.44168pt.
+ [86 <./Figures/mendelmd/family_analysis.png>]
+<./Figures/mendelmd/family_analysis_results.png, id=1214, 1036.87375pt x 225.84
+375pt>
+File: ./Figures/mendelmd/family_analysis_results.png Graphic file (type png)
+ <use ./Figures/mendelmd/family_analysis_results.png>
+Package pdftex.def Info: ./Figures/mendelmd/family_analysis_results.png used on
+ input line 428.
+(pdftex.def)             Requested size: 682.5pt x 148.66447pt.
+ [87 <./Figures/mendelmd/family_analysis_results.png>]
+Overfull \hbox (28.40276pt too wide) in paragraph at lines 432--433
+[]\T1/lmr/m/n/12 Na fi-gura [][]41[][] po-de-mos ob-ser-var a com-pa-ra-ção do 
+ge-nó-tipo de dois ir-mãos (Exome_2_MB
+ []
+
+) [88
+
+
+
+
+
+
+] <./Figures/mendelmd/comparison.png, id=1228, 559.33969pt x 356.0803pt>
+File: ./Figures/mendelmd/comparison.png Graphic file (type png)
+
+<use ./Figures/mendelmd/comparison.png>
+Package pdftex.def Info: ./Figures/mendelmd/comparison.png used on input line 4
+36.
+(pdftex.def)             Requested size: 591.50139pt x 376.56856pt.
+ [89 <./Figures/mendelmd/comparison.png>] [90
+
+
+
+]
+Overfull \hbox (14.50314pt too wide) in paragraph at lines 482--483
+[]\T1/lmr/m/n/12 Podemos ob-ser-var que ne-nhum dos 13 ge-nes can-di-da-tos (\T
+1/lmr/m/it/12 ZNF674\T1/lmr/m/n/12 , \T1/lmr/m/it/12 C21orf62\T1/lmr/m/n/12 , \
+T1/lmr/m/it/12 GPRIN2\T1/lmr/m/n/12 ,
+ []
+
+[91]
+Underfull \hbox (badness 1264) in paragraph at lines 491--491
+[]|\T1/lmr/bx/n/12 Número de
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 491--491
+[]|\T1/lmr/bx/n/12 Número de
+ []
+
+[92] [93
+
+]
+<./Figures/SUCLA2_filtering_process.png, id=1284, 325.215pt x 492.33937pt>
+File: ./Figures/SUCLA2_filtering_process.png Graphic file (type png)
+
+<use ./Figures/SUCLA2_filtering_process.png>
+Package pdftex.def Info: ./Figures/SUCLA2_filtering_process.png used on input l
+ine 570.
+(pdftex.def)             Requested size: 364.00139pt x 551.1008pt.
+ [94 <./Figures/SUCLA2_filtering_process.png>] <./Figures/case_lgc_2.png, id=12
+89, 578.16pt x 433.62pt>
+File: ./Figures/case_lgc_2.png Graphic file (type png)
+
+<use ./Figures/case_lgc_2.png>
+Package pdftex.def Info: ./Figures/case_lgc_2.png used on input line 570.
+(pdftex.def)             Requested size: 455.0pt x 341.24597pt.
+ [95 <./Figures/case_lgc_2.png>] [96] [97
+
+
+
+
+
+
+
+]
+[98] [99] [100
+
+
+
+] [101] [102] [103] [104]) (./Chapters/Chapter5.tex [105]
+[106
+
+] [107] [108] [109] [110] [111] [112] [113] [114] [115]
+Overfull \hbox (12.04733pt too wide) in paragraph at lines 105--106
+[]\T1/lmr/m/n/12 Também exis-tem al-guns ou-tros softwa-res co-mer-ci-ais como 
+por exem-plo En-lis ([][]$<[]https :
+ []
+
+) (./Chapters/Chapter6.tex [116] [117
+
+]) (./main.bbl (./main.brf)
+\tf@brf=\write8
+\openout8 = `main.brf'.
+
+ [118]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 3.
+
+bibitemlist
+[119
+
+] [120] [121] [122] [123]) [124]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 835.
+
+(./_minted-main/6C54A874A5F530D6BFE8EFE1376F96FCC4EBC16DBCC25EFAFA0777A8133E2CB
+0.pygtex
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 1.
+LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/fvm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 2.
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 10.
+LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 9.85492pt on input line 16.
+ [125
+
+] [126]) [127]
+(./_minted-main/D8F353DA51BCB4694ACCED025707D8EFB4C9C0A221839FE14468305E7F86E4C
+F.pygtex [128
+
+] [129] [130] [131]) [132]
+(./_minted-main/37C88D4D51D62DFCBA56EFCE09A7B44383E0184099CFF5E47CFEADF41075972
+C.pygtex [133
+
+] [134] [135]) [136]
+(./_minted-main/9134E41B8DA4561F9A7B07A21CAAB0FF408B021D6BFD66ADC9AD22A2465F218
+E.pygtex [137
+
+] [138]
+Overfull \hbox (61.14168pt too wide) in paragraph at lines 61--61
+| | | |\T1/fvm/m/n/10.95 exome_dataset[]=[][]"/lgc/datasets/exome_datasets/292_
+illumina_samples_from_bi_and_washu.vcf"[]|  
+ []
+
+[139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150]
+[151] [152]) [153]
+(./_minted-main/BB8DCCFC3193135AB1EB6DD08BC066AEBDA0CFFAE74183C7F5457A097CA783C
+8.pygtex [154
+
+] [155] [156]) (./main.ind) 
+AED: lastpage setting LastPage
+[157]
+\tf@lof=\write9
+\openout9 = `main.lof'.
+
+\tf@lot=\write10
+\openout10 = `main.lot'.
+
+\tf@toc=\write11
+\openout11 = `main.toc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 875.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 875.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 875.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 875.
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: E99979AD3482703DE43A7D677F3BD97F;3631.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 875.
+ ) 
+Here is how much of TeX's memory you used:
+ 18038 strings out of 493054
+ 286273 string characters out of 6140586
+ 563480 words of memory out of 5000000
+ 20681 multiletter control sequences out of 15000+600000
+ 121020 words of font info for 76 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 45i,13n,44p,1198b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fon
+ts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-math
+it.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-di
+st/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf-dist/fonts/type1/public/bera/
+fvmb8a.pfb></usr/share/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.
+pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-
+dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public
+/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1
+/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></us
+r/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/
+type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.
+pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/
+lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/lm/lmsso12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.p
+fb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (173 pages, 13819952 bytes).
+PDF statistics:
+ 2299 PDF objects out of 2487 (max. 8388607)
+ 1998 compressed objects within 20 object streams
+ 428 named destinations out of 1000 (max. 500000)
+ 1318 words of extra memory for PDF output out of 10000 (max. 10000000)
+

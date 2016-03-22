@@ -1,0 +1,44 @@
+\select@language {brazil}
+\contentsline {figure}{\numberline {1}{\ignorespaces A estrutura de um Gene}}{4}{figure.caption.12}
+\contentsline {figure}{\numberline {2}{\ignorespaces Processo de Filtragem de Variantes para identifica\IeC {\c c}\IeC {\~a}o de uma doen\IeC {\c c}a Mendeliana}}{7}{figure.caption.13}
+\contentsline {figure}{\numberline {3}{\ignorespaces Crescimento do n\IeC {\'u}mero de artigos publicados com a palavra exome no Pubmed}}{8}{figure.caption.14}
+\contentsline {figure}{\numberline {4}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o gr\IeC {\'a}fica de uma SNP}}{10}{figure.caption.15}
+\contentsline {figure}{\numberline {5}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o gr\IeC {\'a}fica de uma Indel}}{11}{figure.caption.16}
+\contentsline {figure}{\numberline {6}{\ignorespaces Medicina Personalizada}}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama com a separa\IeC {\c c}\IeC {\~a}o entre as camadas do Django}}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {8}{\ignorespaces Exemplo de uma leitura em formato FASTQ}}{24}{figure.caption.20}
+\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de um arquivo no formato SAM}}{26}{figure.caption.21}
+\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de um arquivo no formato VCF}}{27}{figure.caption.22}
+\contentsline {figure}{\numberline {11}{\ignorespaces GATK Framework de an\IeC {\'a}lise de variantes}}{30}{figure.caption.23}
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama com o pipeline de an\IeC {\'a}lise de exomas}}{41}{figure.caption.28}
+\contentsline {figure}{\numberline {13}{\ignorespaces Escore \textit {Phred} de qualidade m\IeC {\'e}dio por base das sequ\IeC {\^e}ncias do indiv\IeC {\'\i }duo RMS}}{45}{figure.caption.30}
+\contentsline {figure}{\numberline {14}{\ignorespaces Distribui\IeC {\c c}\IeC {\~a}o do Escore \textit {Phred} em rela\IeC {\c c}\IeC {\~a}o a todas as sequ\IeC {\^e}ncias do indiv\IeC {\'\i }duo RMS}}{46}{figure.caption.31}
+\contentsline {figure}{\numberline {15}{\ignorespaces Conte\IeC {\'u}do de sequ\IeC {\^e}ncia por base para as sequ\IeC {\^e}ncias do indiv\IeC {\'\i }duo RMS}}{47}{figure.caption.32}
+\contentsline {figure}{\numberline {16}{\ignorespaces Distribui\IeC {\c c}\IeC {\~a}o do conte\IeC {\'u}do de GC nas leituras}}{49}{figure.caption.33}
+\contentsline {figure}{\numberline {17}{\ignorespaces N\IeC {\'\i }veis de duplica\IeC {\c c}\IeC {\~a}o}}{50}{figure.caption.34}
+\contentsline {figure}{\numberline {18}{\ignorespaces Perfis de K-mer}}{51}{figure.caption.35}
+\contentsline {figure}{\numberline {19}{\ignorespaces Estat\IeC {\'\i }sticas do alinhamento antes de utilizarmos o GATK}}{53}{figure.caption.36}
+\contentsline {figure}{\numberline {20}{\ignorespaces Qualidade m\IeC {\'e}dia por base do alinhamento antes de utilizarmos o GATK}}{53}{figure.caption.36}
+\contentsline {figure}{\numberline {21}{\ignorespaces Estat\IeC {\'\i }sticas do alinhamento depois de utilizarmos o GATK}}{54}{figure.caption.37}
+\contentsline {figure}{\numberline {22}{\ignorespaces Qualidade m\IeC {\'e}dia por base do alinhamento depois de utilizarmos o GATK}}{54}{figure.caption.37}
+\contentsline {figure}{\numberline {23}{\ignorespaces Escore de Qualidade Emp\IeC {\'\i }rico vs Reportado}}{57}{figure.caption.39}
+\contentsline {figure}{\numberline {24}{\ignorespaces N\IeC {\'u}mero de Bases vs Escore de Qualidade}}{58}{figure.caption.40}
+\contentsline {figure}{\numberline {25}{\ignorespaces Qualidade (Emp\IeC {\'\i }rico - Reportado) vs Dinucleot\IeC {\'\i }deos}}{59}{figure.caption.41}
+\contentsline {figure}{\numberline {26}{\ignorespaces Dashboard - Interface para visualiza\IeC {\c c}\IeC {\~a}o dos indiv\IeC {\'\i }duos no sistema}}{67}{figure.caption.44}
+\contentsline {figure}{\numberline {27}{\ignorespaces Interface para submiss\IeC {\~a}o dos indiv\IeC {\'\i }duos no sistema}}{68}{figure.caption.45}
+\contentsline {figure}{\numberline {28}{\ignorespaces Interface do Celery}}{69}{figure.caption.46}
+\contentsline {figure}{\numberline {29}{\ignorespaces Processo de anota\IeC {\c c}\IeC {\~a}o de variantes}}{70}{figure.caption.47}
+\contentsline {figure}{\numberline {30}{\ignorespaces Programa desenvolvido para convers\IeC {\~a}o entre arquivos VCF e CSV}}{72}{figure.caption.48}
+\contentsline {figure}{\numberline {31}{\ignorespaces Framework de anota\IeC {\c c}\IeC {\~a}o de variantes}}{74}{figure.caption.49}
+\contentsline {figure}{\numberline {32}{\ignorespaces Interface para visualizar m\IeC {\'e}tricas sobre os dados inseridos}}{75}{figure.caption.50}
+\contentsline {figure}{\numberline {33}{\ignorespaces Interface para Busca de Genes}}{77}{figure.caption.51}
+\contentsline {figure}{\numberline {34}{\ignorespaces Interface com grupos de genes adicionados}}{78}{figure.caption.52}
+\contentsline {figure}{\numberline {35}{\ignorespaces Interface para Busca de Doen\IeC {\c c}as}}{79}{figure.caption.53}
+\contentsline {figure}{\numberline {36}{\ignorespaces Filtragem de Variantes - 1\IeC {\textordfeminine } Etapa}}{81}{figure.caption.54}
+\contentsline {figure}{\numberline {37}{\ignorespaces Filtragem de Variantes - 2\IeC {\textordfeminine } Etapa}}{82}{figure.caption.55}
+\contentsline {figure}{\numberline {38}{\ignorespaces Filtragem de Variantes - 3\IeC {\textordfeminine } Etapa}}{83}{figure.caption.56}
+\contentsline {figure}{\numberline {39}{\ignorespaces Family Analysis}}{86}{figure.caption.57}
+\contentsline {figure}{\numberline {40}{\ignorespaces Resultado do Family Analysis}}{87}{figure.caption.58}
+\contentsline {figure}{\numberline {41}{\ignorespaces Interface para compara\IeC {\c c}\IeC {\~a}o de indiv\IeC {\'\i }duos}}{89}{figure.caption.59}
+\contentsline {figure}{\numberline {42}{\ignorespaces Processo de filtragem de variantes do caso LGC 2}}{94}{figure.caption.61}
+\contentsline {figure}{\numberline {43}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o das variantes do caso LGC 2}}{95}{figure.caption.62}

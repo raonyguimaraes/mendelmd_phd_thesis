@@ -1,0 +1,2 @@
+- Atualização das imagens e melhor descrição de cada uma delas.
+- Adição de um título em cada uma das imagens.

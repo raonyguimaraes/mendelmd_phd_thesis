@@ -1,0 +1,879 @@
+%% abtex2-modelo-trabalho-academico.tex, v-1.7.1 laurocesar
+%% Copyright 2012-2013 by abnTeX2 group at http://abntex2.googlecode.com/ 
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on 
+%% http://abntex2.googlecode.com/
+%%
+%% This work consists of the files abntex2-modelo-trabalho-academico.tex,
+%% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
+%%
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico (tese de doutorado, dissertacao de
+% mestrado e trabalhos monograficos em geral) em conformidade com 
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos -
+% Apresentacao
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openany,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,			% para impressão em verso e anverso. Oposto a oneside
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	brazil,				% o último idioma é o principal do documento
+	]{abntex2}
+
+\let\newfloat\undefined
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{cmap}				% Mapear caracteres especiais no PDF
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+% \usepackage{graphicx}			% Inclusão de gráficos
+\usepackage[pdftex]{graphicx}
+\usepackage{subcaption}
+\usepackage{afterpage}
+\usepackage{listings}
+\usepackage{rotating}
+
+%\usepackage{subfigure}
+% \usepackage{geometry}
+\usepackage{pdflscape}
+% \usepackage{lscape}
+% \usepackage[demo]{graphicx}
+% \usepackage{caption}
+% \usepackage{subcaption}
+% \overfullrule=2cm
+%comand para marcar overfull
+%package to format capa e folha de rosto
+\usepackage{ufmg}
+\usepackage{float}
+\setcounter{secnumdepth}{5}
+% \usepackage{caption}
+\usepackage[font=Large]{caption}
+\usepackage{lipsum}
+\usepackage{listings}
+
+\renewcommand*{\cftdotsep}{1}
+\setpnumwidth{3em}
+\setrmarg{4em}
+
+% \renewcommand\listfigurename{Lista de Figuras}
+% \renewcommand\listtablename{Lista de Tabelas}
+\addto\captionsbrazil{
+%% ajusta nomes padroes do babel
+\renewcommand{\bibname}{Refer\^encias}
+\renewcommand{\indexname}{\’Indice}
+\renewcommand{\listfigurename}{Lista de Figuras}
+\renewcommand{\listtablename}{Lista de Tabelas}
+\renewcommand\lstlistingname{Arquivo}
+\renewcommand\lstlistlistingname{Lista de Anexos}
+\renewcommand*{\lstlistingname}{NewListing}
+%% ajusta nomes usados com a macro \autoref
+\renewcommand{\pageautorefname}{p\’agina}
+\renewcommand{\sectionautorefname}{se{\c c}\~ao}
+\renewcommand{\subsectionautorefname}{subse{\c c}\~ao}
+\renewcommand{\paragraphautorefname}{par\’agrafo}
+\renewcommand{\subsubsectionautorefname}{subse{\c c}\~ao}
+}
+
+%for showing python code
+
+\usepackage[scaled]{beramono}
+\usepackage{minted}
+
+% \usepackage{listings}
+%  
+% \lstset{
+%   language=Python,
+%   showstringspaces=false,
+%   formfeed=\newpage,
+%   tabsize=4,
+%   commentstyle=\itshape,
+%   basicstyle=\ttfamily,
+%   morekeywords={models, lambda, forms}
+% }
+%  
+% \newcommand{\code}[2]{
+%   \hrulefill
+%   \subsection*{#1}
+%   \lstinputlisting{#2}
+%   \vspace{2em}
+% }
+
+% ---
+		
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+% \usepackage{lipsum}				% para geração de dummy text
+% ---
+
+% \newcommand{\textbackslash}{\\}
+% \newcommand{\textbackslash}{\\}
+% \renewcommand{\textbackslash}{\}
+% \providecommand{\&}{&}
+% \providecommand{\bsl}{}%
+
+% \renewcommand\contentsname{whatever}
+
+
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+%\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage[alf,abnt-url-package=url]{abntex2cite}
+
+%\usepackage[alf,abnt-url-package=url]{abntex2cite}
+
+% \usepackage[num]{abntex2cite}	% Citações padrão ABNT
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+\providecommand{\textbackslash}{} 
+
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+\graphicspath{{./Figures/}} % Specifies the directory where pictures are stored
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Mendel,MD: Desenvolvimento e validação de uma ferramenta online para análise de exomas humanos e investigação de doenças Mendelianas.}
+\autor{Raony Guimarães Corrêa Do Carmo Lisbôa Cardenas}
+\local{Belo Horizonte}
+\data{2015}
+\orientador{Prof. Dr. Sérgio Danilo Junho Pena}
+\coorientador{}
+\instituicao{%
+  Universidade Federal de Minas Gerais - UFMG
+  \par
+  Instituto de Ciências Biológicas
+  \par
+  Programa de Pós-Graduação em Bioinformática}
+\tipotrabalho{Tese (Doutorado)}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{Relatório final do projeto de tese apresentado ao colegiado do curso de Doutorado em Bioinformática como parte integrante dos requisitos para obtenção do título de Doutor em Bioinformática.}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+		pdfsubject={\imprimirpreambulo},
+		pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+		linkcolor=blue,          	% color of internal links
+		citecolor=blue,        		% color of links to bibliography
+		filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+% \setlength{\parskip}{0.2cm}  % tente também \onelineskip \doublespacing
+\DoubleSpacing
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+\frontmatter
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% %%%CAPA
+
+\begin{center}
+% image
+
+\includegraphics[width=0.2\textwidth]{./Pictures/Logo_UFMG.jpg}
+
+
+% \includegraphics[scale=0.1,keepaspectratio=true]{./Pictures/Logo_UFMG.jpg}
+% Logo_UFMG.jpg: 860x336 pixel, 100dpi, 21.84x8.53 cm, bb=0 0 619 242
+
+\textsc{\LARGE Universidade Federal de Minas Gerais}\\[1.5cm] % University name
+\HRule \\[0.4cm] % Horizontal line
+{\huge \textbf{Mendel,MD: Desenvolvimento e validação de uma ferramenta online para análise de exomas humanos e investigação de doenças Mendelianas.} }\\[0.4cm] % Thesis title
+\HRule \\[1.5cm] % Horizontal line
+\vspace{6em}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Autor:}\\
+\href{http://lattes.cnpq.br/0263349039132540}{Raony GCCL Cardenas} % Author name - remove the \href bracket to remove the link
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Orientador:} \\
+\href{http://lattes.cnpq.br/5969241975196292}{Sérgio DJ Pena} % Supervisor name - remove the \href bracket to remove the link  
+\end{flushright}
+\end{minipage}\\[1cm]
+ 
+\large \textit{Documento apresentado em cumprimento aos requisitos para obtenção do título de  Doutor em Bioinformática}\\[0.3cm] % University requirement text
+\textit{no}\\[0.4cm]
+Instituto de Ciências Biológicas\\[2cm] % Research group name and department name
+{\large \today}\\[4cm] % Date
+%\includegraphics{Logo} % University/department logo - uncomment to place it
+\vfill
+\clearpage % Start a new page
+
+
+\end{center}
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+\pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Inserir folha de aprovação
+% ---
+
+% Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação
+% do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
+% imagem da página assinada pela banca com o comando abaixo:
+%
+% \includepdf{folhadeaprovacao_final.pdf}
+% %
+% \begin{folhadeaprovacao}
+% 
+%   \begin{center}
+%     {\ABNTEXchapterfont\large\imprimirautor}
+% 
+%     \vspace*{\fill}\vspace*{\fill}
+%     {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+%     \vspace*{\fill}
+%     
+%     \hspace{.45\textwidth}
+%     \begin{minipage}{.5\textwidth}
+%         \imprimirpreambulo
+%     \end{minipage}%
+%     \vspace*{\fill}
+%    \end{center}
+%     
+%    Trabalho aprovado. \imprimirlocal, 24 de novembro de 2012:
+% 
+%    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+%    \assinatura{\textbf{Professor} \\ Convidado 1}
+%    \assinatura{\textbf{Professor} \\ Convidado 2}
+%    %\assinatura{\textbf{Professor} \\ Convidado 3}
+%    %\assinatura{\textbf{Professor} \\ Convidado 4}
+%       
+%    \begin{center}
+%     \vspace*{0.5cm}
+%     {\large\imprimirlocal}
+%     \par
+%     {\large\imprimirdata}
+%     \vspace*{1cm}
+%   \end{center}
+%   
+% \end{folhadeaprovacao}
+% % ---
+% 
+
+
+\pagenumbering{roman}
+
+% % ---
+% Dedicatória
+% ---
+\begin{dedicatoria}
+ \vspace*{\fill}
+ \centering
+ \noindent
+ \textit{Dedicado as minhas irmãs, Cecília, Duda e Isabel e ao meu irmão Pedro Henrique.} \vspace*{\fill}
+\end{dedicatoria}
+% % ---
+% 
+% % ---
+% Agradecimentos
+% ---
+
+
+\begin{agradecimentos}
+
+Gostaria antes de tudo de agradecer a minha família, em especial a minha querida avó Edna Guimarães Corrêa e a minha mãe Patrícia Do Carmo Lisboa Mouro que sempre fizeram de tudo para me dar a melhor educação possível.
+
+A minha esposa Anna Kowalska Guimarães por todo amor e carinho que recebi e por sempre ter me apoiado muito quando decidi vir fazer meu Doutorado aqui em Belo Horizonte. Kocham Cię!
+
+Ao Prof. Sérgio Danilo Junho Pena pela sua orientação e dedicação, por me ensinar os valores de um verdadeiro cientista e pelas valiosas lições que aprendi ao longo de meu Doutorado sob sua orientação.
+
+Aos membros do Laboratório de Genômica Clínica Raquel Liboredo, Michele Pena, Tiago Magalhães, Lucas Santos, Natália Linhares, Maíra Freire e Fernanda Soardi e aos amigos do Laboratório de Genética e Bioquímica.
+
+Aos pesquisadores Dr. Cascon Alberto, Dr. Christopher Carroll, Dr. Fowzan S. Alkuraya, Dr. Pia Ostergaard e Dr. Yaniv Erlich que contribuíram para este trabalho enviando seus exomas para serem analisados e validados pelo Mendel,MD. Sem essa contribuição esse trabalho não poderia ter sido realizado.
+
+A pesquisadora Dra. Judith Conroy pela colaboração e as valiosas sugestões que foram feitas ao Mendel,MD.
+
+Aos amigos do ICB em especial Thiago Mafra e Rondon Neto pelas valiosas discussões sobre Bioinformática que tivemos ao longo desse tempo.
+
+Aos amigos do Hackerspace Área31 e Python User Group de Minas Gerais (PUG-MG) pela grande amizade e pelos encontros que tivemos nos bares de Belo Horizonte.
+
+Aos meus amigos de infância Martielo Borelli e Miguel Rivero por terem me incentivado a estudar e a continuar aprendendo coisas novas.
+
+Por último, mas não menos importante, gostaria de agradecer ao meu cachorro Einstein que sempre me acompanhou durante todo esse tempo nos passeios diários de reflexão e raciocínio.
+
+\end{agradecimentos}
+% % ---
+% 
+% % ---
+% Epígrafe
+% ---
+% \begin{epigrafe}
+%     \vspace*{\fill}
+% 	\begin{flushright}
+% 		\textit{``Meus estudos científicos têm me proporcionado grande satisfação \\
+% 		e eu estou convencido que não demorará muito para que o mundo inteiro \\
+% 		reconheça os resultados de meu trabalho. \\
+% 		(Gregor Mendel)}		
+% 	\end{flushright}
+% \end{epigrafe}
+%---
+
+% ---
+% RESUMOS
+% ---
+% addcontentsline{toc}{chapter}{Resumo}
+% \section*{Resumo}
+% \addcontentsline{toc}{section}{Resumo}
+
+\addcontentsline{toc}{section}{Resumo}
+% \section*{Resumo}
+
+% resumo em português
+\begin{resumo}
+
+Com o advento dos métodos de sequenciamento de nova geração, o seqüenciamento de todo o exoma de um paciente tornou-se economicamente viável para realizar o diagnóstico clínico de doenças genéticas, incluindo as raras e complexas. 
+
+A estratégia para a identificação de variantes patogénicas é complexa, uma vez que em todos os exomas existem entre 40-50.000 variantes em comparação com o genoma humano de referência. Para simplificar este procedimento, filtros computacionais são aplicados de forma sequencial com o objetivo de eliminar variantes comuns e sinônimas, reduzindo o tamanho da amostra total. 
+
+Esse trabalho apresenta o desenvolvimento de uma ferramenta de Bioinformática chamada Mendel,MD, que é eficiente e sofisticada do ponto de vista computacional, e ao mesmo tempo, simples e amigável para ser utilizada por médicos e cientistas para auxiliar no diagnóstico de pacientes com doenças mendelianas.
+
+A Análise de Filtros é um método que combina diferentes anotações, bases de dados e escores de patogenicidade, permitindo com isso reduzir o número de variantes e genes de cada caso clínico de milhares de candidatos para apenas algumas poucas dezenas. Ressaltando que a lista final de genes deve sempre ser investigada manualmente por médicos e pesquisadores, na busca de mutações candidatas, levando em consideração as informações específicas de cada caso clínico específico.
+
+Essa ferramenta foi validada com dados de 15 casos clínicos diferentes recebidos a partir de laboratórios especializados de diferentes países. Foi consistentemente possível identificar uma pequena lista de candidatos de genes causais, que incluiu o diagnóstico correto em todos os casos investigados.
+
+Mendel, MD é uma ferramenta eficiente, segura e confiável na exploração de variantes de exomas de pacientes com Doenças Mendelianas, sofisticados do ponto de vista da bioinformática e ainda assim simples o suficiente para ser usado por médicos e cientistas para analisar rapidamente seus pŕoprios dados genômicos.
+
+ \vspace{\onelineskip}
+ \noindent
+ \textbf{Palavras-chaves}: bioinformática, exoma humano, genoma humano, Doença Mendeliana, filtragem de variantes, anotação de variantes, análise de exomas, sequenciamento de nova geração.
+\end{resumo}
+
+% 
+% resumo em inglês
+
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+
+With the emergence of next-generation methodology, the sequencing of the whole exome of a patient has become economically viable to perform the clinical diagnosis of genetic diseases, including rare and complex. The strategy for identification of pathogenic variants is complex, since in every exome there are between 40-50000 variants compared to the reference human genome. To simplify this procedure, computer filters are applied sequentially in order to remove common and synonymous variants, reducing the total sample size.
+
+After identifying pathogenic variants, laboratory confirmation should be carried out, for example, using traditional Sanger sequencing to arrive at a definitive diagnosis of each clinical case.
+
+The main purpose of this study was to develop a bioinformatics tool called Mendel,MD, that was efficient and sophisticated from the computational point of view, and at the same time, simple and friendly to be used by doctors and scientists to assist in the diagnosis of patients with Mendelian Disorders. To address this issues a free and open source tool was developed that can be downloaded and installed in any laboratory that are interested in analyzing the exome data of their patients.
+
+After sending a standard file with the information of the genotypes of patients, we performed annotation with different methods and tools and evaluate different metrics on the information obtained. We present information on the average coverage and quality of each individual. These values ​​are used in setting thresholds for filtering parameters of the method that was implemented called Filters Analysis.
+
+The Filter analysis is a method that combines hundreds of different annotations, databases and pathogenicity scores, thereby allowing for reducing the number of gene and variants in each clinical case of thousands of candidates for only a few tens. Noting that the final list of genes should always be investigated manually by physicians and researchers in the search for candidate mutations, taking into account the information of each specific clinical case.
+
+In order to integrate the filtering results with the possibility of considering different genetic inheritance models (Ex. Recessive, dominant or X-linked) a method called Filter Analysis for Families was developed. It allows the search for variants that are compound heterozygous (i.e. when a mutation is inherited from each parent) and denovo variants present variants in exomas triplets, quartets or even a larger number of affected individuals of a particular family.
+
+This tool has been validated with data from 15 different clinical cases received from specialized laboratories in different countries. It was consistently able to identify a short list of candidates of causal genes, which included the correct diagnosis in all cases investigated.
+
+Mendel, MD is an efficient, safe and reliable tool in the exploration of exome variants of patients with Mendelian disorders, sophisticated from the bioinformatics point of view and yet simple enough to be used by physicians and scientists to quickly analyze their own genomic data .
+
+   \vspace{\onelineskip}
+ 
+   \noindent 
+   \textbf{Key-words}: exome sequencing, exome analysis, Mendelian disorder, next generation sequencing, variant calling, variant annotation.
+ \end{otherlanguage*}
+\end{resumo}
+
+
+% 
+% % resumo em francês 
+% \begin{resumo}[Résumé]
+%  \begin{otherlanguage*}{french}
+%     Il s'agit d'un résumé en français.
+%  
+%    \vspace{\onelineskip}
+%  
+%    \noindent
+%    \textbf{Mots-clés}: latex. abntex. publication de textes.
+%  \end{otherlanguage*}
+% \end{resumo}
+% 
+% % resumo em espanhol
+% \begin{resumo}[Resumen]
+%  \begin{otherlanguage*}{spanish}
+%    Este es el resumen en español.
+%   
+%    \vspace{\onelineskip}
+%  
+%    \noindent
+%    \textbf{Palabras clave}: latex. abntex. publicación de textos.
+%  \end{otherlanguage*}
+% \end{resumo}
+% ---
+
+% ---
+% inserir lista de ilustrações
+% ---
+\phantomsection
+\addcontentsline{toc}{section}{Lista de Figuras}
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+% \cleardoublepage
+\clearpage
+% ---
+
+% ---
+% inserir lista de tabelas
+% ---
+
+\phantomsection
+\addcontentsline{toc}{section}{Lista de Tabelas}
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+% \cleardoublepage
+\clearpage
+
+%Inserir listings
+%\addcontentsline{toc}{section}{Lista de Anexos}
+
+% \phantomsection
+% \addcontentsline{toc}{section}{\lstlistlistingname}
+% \pdfbookmark[0]{\lstlistlistingname}{loa}
+
+% \lstlistoflistings
+
+% \clearpage
+% \cleardoublepage
+
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+
+\phantomsection
+\addcontentsline{toc}{section}{Lista de Abreviaturas e Siglas}
+\begin{siglas}
+  \item[AB3C] \textit{Associação Brasileira de Bioinformática e Biologia Computacional}
+  \item[BFAST] \textit{Blat-like Fast Accurate Search}
+  \item[BWA] \textit{Burrows-Wheeler Aligner}
+  \item[CADD] \textit{Combined Annotation Dependent Depletion}
+  \item[CENAPAD] Centro Nacional de Processamento de Alto Desempenho
+  \item[CNV] \textit{Copy Number variations}
+  \item[CSV] \textit{Comma Separated Values}
+  \item[ESP] \textit{Exome Sequencing Project}
+  \item[FSS] Síndrome de Freeman-Sheldon (\textit{Freeman-Sheldon Syndrome})
+  \item[GATK] \textit{Genome Analisys ToolKit}
+  \item[GL] \textit{Genome Library}
+  \item[HGMD] \textit{Human Genome Mutation Database}
+  \item[HGNC] \textit{HUGO Gene Nomenclature Committee}
+  \item[HUGO] \textit{Human Genome Organisation}
+  \item[INDEL] Inserção/Deleção (\textit{Insertion/Deletion})
+  \item[LGC] Laboratório de Genômica Clínica
+  \item[MVC] \textit{Model View Controller}
+  \item[NCBI] \textit{National Center for Biotechnology Information}
+  \item[NMD] \textit{Nonsense-mediated decay}
+  \item[OMIM] \textit{Online Mendelian Inheritance in Man}
+  \item[ORM] \textit{Object-relational mapping}
+  \item[PB] Par de Base
+  \item[SAM] \textit{Sequence Alignment/Map}
+  \item[SBIS] \textit{Sociedade Brasileira de Informática em Saúde}
+  \item[SGBD] Sistema Gerenciador de Banco de Dados
+  \item[SIFT] \textit{Sort Intolerant From Tolerant}
+  \item[SNP] Polimorfismo de Nucleotídeo Único (\textit{Single Nucleotide Polimorphism})
+  \item[SQL] \textit{Structured Query Language}
+  \item[SV] Variante Estrutural (\textit{Structural Variant})
+  \item[TF] \textit{Transcription factor}
+  \item[TFBS] \textit{Transcription Factor Binding Sites}
+  \item[UTR] \textit{Untranslated Region}
+  \item[VCF] \textit{Variant Call Format}
+  \item[VEP] \textit{Variant Effect Predictor}
+  
+  
+  
+  
+  
+  
+\end{siglas}
+% % ---
+% 
+% \lhead{\emph{Abreviações}} % Set the left side page header to "Abbreviations"
+% \listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+% {
+% \textbf{SNP} & Single Nucleotide Polimorphism \\
+% \textbf{Indel} & Insertion/Deletion \\
+% \textbf{SV} & Structural Variantt \\
+% \textbf{FSS} & Síndrome de Freeman-Sheldon \\
+% \textbf{HGMD} & Human Genome Mutation Database \\
+% \textbf{GATK} & Genome Analisys ToolKit \\
+% \textbf{OMIM} & Online Mendelian Inheritance in Man \\
+% 
+% 
+% \textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+% \textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+% }
+
+% ---
+% inserir lista de símbolos
+% ---
+% \begin{simbolos}
+%   \item[$ \Gamma $] Letra grega Gama
+%   \item[$ \Lambda $] Lambda
+%   \item[$ \zeta $] Letra grega minúscula zeta
+%   \item[$ \in $] Pertence
+% \end{simbolos}
+% ---
+
+% ---
+% inserir o sumario
+% ---
+\renewcommand\contentsname{Índice}
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+% \cleardoublepage
+\clearpage
+% ---
+
+\mainmatter
+
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+%\textual
+
+
+
+
+%start counting 1,2,3,4
+
+
+% ----------------------------------------------------------
+% Introdução
+% ----------------------------------------------------------
+% (1) Resumo, 
+% (2) Introdução e Justificativa, 
+% (3) Objetivos, 
+% (4) Metodologia, 
+% (5) Resultados preliminares, 
+% (6) Cronograma das etapas a serem realizadas até o final do prazo de 48 meses de Doutorado e 
+% (7) Bibliografia. 
+
+\input{./Chapters/Chapter1}%Introdução
+\input{./Chapters/Chapter2}%Objetivos
+\input{./Chapters/Chapter3}%Metodologia
+\input{./Chapters/Chapter4}%Resultados
+\input{./Chapters/Chapter5}%Discussão
+\input{./Chapters/Chapter6}%Conclusões
+% 
+% Este documento e seu código-fonte são exemplos de referência de uso da classe
+% \textsf{abntex2} e do pacote \textsf{abntex2cite}. O documento 
+% exemplifica a elaboração de trabalho acadêmico (tese, dissertação e outros do
+% gênero) produzido conforme a ABNT NBR 14724:2011 \emph{Informação e documentação
+% - Trabalhos acadêmicos - Apresentação}.
+% 
+% A expressão ``Modelo Canônico'' é utilizada para indicar que \abnTeX\ não é
+% modelo específico de nenhuma universidade ou instituição, mas que implementa tão
+% somente os requisitos das normas da ABNT. Uma lista completa das normas
+% observadas pelo \abnTeX\ é apresentada em \citeonline{abntex2classe}.
+% 
+% Sinta-se convidado a participar do projeto \abnTeX! Acesse o site do projeto em
+% \url{http://abntex2.googlecode.com/}. Também fique livre para conhecer,
+% estudar, alterar e redistribuir o trabalho do \abnTeX, desde que os arquivos
+% modificados tenham seus nomes alterados e que os créditos sejam dados aos
+% autores originais, nos termos da ``The \LaTeX\ Project Public
+% License''\footnote{\url{http://www.latex-project.org/lppl.txt}}.
+% 
+% Encorajamos que sejam realizadas customizações específicas deste exemplo para
+% universidades e outras instituições --- como capas, folha de aprovação, etc.
+% Porém, recomendamos que ao invés de se alterar diretamente os arquivos do
+% \abnTeX, distribua-se arquivos com as respectivas customizações.
+% Isso permite que futuras versões do \abnTeX~não se tornem automaticamente
+% incompatíveis com as customizações promovidas. Consulte
+% \citeonline{abntex2-wiki-como-customizar} par mais informações.
+% 
+% Este documento deve ser utilizado como complemento dos manuais do \abnTeX\ 
+% \cite{abntex2classe,abntex2cite,abntex2cite-alf} e da classe \textsf{memoir}
+% \cite{memoir}. 
+% 
+% Esperamos, sinceramente, que o \abnTeX\ aprimore a qualidade do trabalho que
+% você produzirá, de modo que o principal esforço seja concentrado no principal:
+% na contribuição científica.
+% 
+% Equipe \abnTeX 
+% 
+% Lauro César Araujo
+% 
+% 
+% % ----------------------------------------------------------
+% % PARTE - preparação da pesquisa
+% % ----------------------------------------------------------
+% \part{Preparação da pesquisa}
+% 
+% % ----------------------------------------------------------
+% % Capitulo com exemplos de comandos inseridos de arquivo externo 
+% % ----------------------------------------------------------
+% 
+% % \include{abntex2-modelo-include-comandos}
+% 
+% % ----------------------------------------------------------
+% % Parte de revisãod e literatura
+% % ----------------------------------------------------------
+% \part{Revisão de Literatura}
+% 
+% % ---
+% % Capitulo de revisão de literatura
+% % ---
+% \chapter{Lorem ipsum dolor sit amet}
+% 
+% % ---
+% \section{Aliquam vestibulum fringilla lorem}
+% % ---
+% 
+% \lipsum[1]
+% 
+% \lipsum[2-3]
+% 
+% % ----------------------------------------------------------
+% % Resultados
+% % ----------------------------------------------------------
+% \part{Resultados}
+% 
+% % ---
+% % primeiro capitulo de Resultados
+% % ---
+% \chapter{Lectus lobortis condimentum}
+% 
+% % ---
+% \section{Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+% posuere cubilia Curae}
+% % ---
+% 
+% \lipsum[21-22]
+% 
+% % ---
+% % segundo capitulo de Resultados
+% % ---
+% \chapter{Nam sed tellus sit amet lectus urna ullamcorper tristique interdum
+% elementum}
+% 
+% \section{Pellentesque sit amet pede ac sem eleifend consectetuer}
+% 
+% \lipsum[24]
+% 
+% % ---
+% % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
+% % ---
+% \bookmarksetup{startatroot}% 
+% % ---
+% 
+% % ---
+% % Conclusão
+% % ---
+% \chapter*[Conclusão]{Conclusão}
+% \addcontentsline{toc}{chapter}{Conclusão}
+% 
+% \lipsum[31-33]
+% 
+% % ----------------------------------------------------------
+% % ELEMENTOS PÓS-TEXTUAIS
+% % ----------------------------------------------------------
+% \postextual
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{Bibliography}
+
+
+
+% \providecommand{\textbackslash}{\textbackslash}
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%
+%\glossary
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+% ---
+% Inicia os apêndices
+% ---
+
+% \begin{apendicesenv}
+
+% \input{./Appendices/AppendixA}
+
+% Imprime uma página indicando o início dos apêndices
+% \partapendices
+% 
+% % ----------------------------------------------------------
+% \chapter{Quisque libero justo}
+% % ----------------------------------------------------------
+% 
+% \lipsum[50]
+% 
+% % ----------------------------------------------------------
+% \chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
+% ac pretium ante justo a nulla curabitur tristique arcu eu metus}
+% % ----------------------------------------------------------
+% \lipsum[55-57]
+
+% \end{apendicesenv}
+% ---
+% 
+% 
+% % ----------------------------------------------------------
+% % Anexos
+% % ----------------------------------------------------------
+% 
+% ---
+% Inicia os anexos
+% ---
+
+
+
+\begin{anexosenv}
+
+% Imprime uma página indicando o início dos anexos
+%\partanexos
+
+\chapter{Modelo utilizado para armazenar os dados de cada indivíduo.}
+Podemos observar que diferentes tipos de campos de informação foram utilizados como por exemplo ForeignKey, CharField, TextField e FileField
+
+\begin{lstlisting}[caption={Modelo utilizado para armazenar os dados de cada indivíduo.},label={lst:modelo_individuo}]{
+}
+\end{lstlisting}
+\inputminted[breaklines, fontsize=\small]{python}{code/models.py}
+
+
+\chapter{Modelo utilizado para armazenar os dados sobre as variantes de cada indivíduo.}
+\begin{lstlisting}[caption={Modelo utilizado para armazenar os dados sobre as variantes de cada indivíduo.},label={lst:modelo_variantes}]{
+}
+\end{lstlisting}
+\inputminted[breaklines, fontsize=\small]{python}{code/variants_models.py}
+
+
+\chapter{BWA - Script desenvolvido para realizar o alinhamento dos arquivos em formato FASTQ.}
+
+\begin{lstlisting}[caption={BWA - Script desenvolvido para realizar o alinhamento dos arquivos em formato FASTQ.}]{
+}
+\end{lstlisting}
+\inputminted[breaklines, fontsize=\small]{python}{scripts/bwa.py}
+
+\chapter{GATK- Script desenvolvido para executar o programa GATK.}
+\begin{lstlisting}[caption={GATK- Script desenvolvido para executar o programa GATK.}]{
+}
+\end{lstlisting}
+\inputminted[breaklines, fontsize=\small]{python}{scripts/gatk.py}
+
+% ---
+\chapter{Unified Genotyper - GATK - Script desenvolvido para realizar o Calling de Variantes}
+\begin{lstlisting}[caption={Unified Genotyper - GATK - Script desenvolvido para realizar o Calling de Variantes.}]{
+}
+\end{lstlisting}
+\inputminted[breaklines, fontsize=\small]{python}{scripts/unifiedgenotyper.py}
+
+\end{anexosenv}
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+
+\printindex
+
+\end{document}

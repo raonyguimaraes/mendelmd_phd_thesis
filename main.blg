@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Arch Linux)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: Bibliography.bib
+Reallocated buffer (elt_size=1) to 40000 items from 20000.
+Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
+Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
+Reallocated out_buf (elt_size=1) to 40000 items from 20000.
+Reallocated name_tok (elt_size=8) to 40000 items from 20000.
+Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=8) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.5           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 57 entries,
+            6714 wiz_defined-function locations,
+            1699 strings with 67572 characters,
+and the built_in function-call counts, 128680 in all, are:
+= -- 16037
+> -- 2230
+< -- 4082
++ -- 4764
+- -- 646
+* -- 8250
+:= -- 15136
+add.period$ -- 272
+call.type$ -- 57
+change.case$ -- 739
+chr.to.int$ -- 206
+cite$ -- 56
+duplicate$ -- 14225
+empty$ -- 3338
+format.name$ -- 3206
+if$ -- 24750
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1017
+newline$ -- 386
+num.names$ -- 280
+pop$ -- 1184
+preamble$ -- 1
+purify$ -- 267
+quote$ -- 0
+skip$ -- 14296
+stack$ -- 1
+substring$ -- 6060
+swap$ -- 5443
+text.length$ -- 201
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1
+warning$ -- 0
+while$ -- 494
+width$ -- 0
+write$ -- 1054

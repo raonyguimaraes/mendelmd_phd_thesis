@@ -1,0 +1,489 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.5 }
+
+\bibitem[Abecasis et al. 2012]{Abecasis2012}
+\abntrefinfo{Abecasis et al.}{ABECASIS et al.}{2012}
+{ABECASIS, G.~R. et al. {An integrated map of genetic variation from 1,092
+  human genomes.}
+\emph{Nature}, v.~491, n.~7422, p. 56--65, nov 2012.
+ISSN 1476-4687.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3498066{\&}tool=pmcentrez{\&}rendertype=abstract
+  http://www.ncbi.nlm.nih.gov/pubmed/23}.}
+
+\bibitem[Adams 1991]{biomed_info}
+\abntrefinfo{Adams}{ADAMS}{1991}
+{ADAMS, H.~G. {Medical Informatics: Computer Applications in Health Care}.
+\emph{JAMA: The Journal of the American Medical Association}, v.~265, n.~4,
+  p.~522, jan 1991.
+ISSN 0098-7484.
+Dispon{\'\i}vel em:
+  \url{http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.1991.03460040100041}.}
+
+\bibitem[Adzhubei, Jordan e Sunyaev 2013]{Adzhubei2013}
+\abntrefinfo{Adzhubei, Jordan e Sunyaev}{ADZHUBEI; JORDAN; SUNYAEV}{2013}
+{ADZHUBEI, I.; JORDAN, D.~M.; SUNYAEV, S.~R. {Predicting Functional Effect of
+  Human Missense Mutations Using PolyPhen-2}. In:  \emph{Current Protocols in
+  Human Genetics}. Hoboken, NJ, USA: John Wiley {\&} Sons, Inc., 2013. Chapter
+  7, n. January, p. 7.20.1--7.20.41.
+ISBN 0471142905.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/23315928
+  http://doi.wiley.com/10.1002/0471142905.hg0720s76}.}
+
+\bibitem[Bamshad et al. 2011]{Bamshad2011a}
+\abntrefinfo{Bamshad et al.}{BAMSHAD et al.}{2011}
+{BAMSHAD, M.~J. et al. {Exome sequencing as a tool for Mendelian disease gene
+  discovery.}
+\emph{Nature reviews. Genetics}, Nature Publishing Group, v.~12, n.~11, p.
+  745--55, nov 2011.
+ISSN 1471-0064.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/21946919}.}
+
+\bibitem[Bartoloni et al. 2002]{Bartoloni2002}
+\abntrefinfo{Bartoloni et al.}{BARTOLONI et al.}{2002}
+{BARTOLONI, L. et al. {Mutations in the DNAH11 (axonemal heavy chain dynein
+  type 11) gene cause one form of situs inversus totalis and most likely
+  primary ciliary dyskinesia.}
+\emph{Proceedings of the National Academy of Sciences of the United States of
+  America}, v.~99, n.~16, p. 10282--6, aug 2002.
+ISSN 0027-8424.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/12142464}.}
+
+\bibitem[Bernstam, Smith e Johnson 2010]{Bernstam2010}
+\abntrefinfo{Bernstam, Smith e Johnson}{BERNSTAM; SMITH; JOHNSON}{2010}
+{BERNSTAM, E.~V.; SMITH, J.~W.; JOHNSON, T.~R. {What is biomedical
+  informatics?}
+\emph{Journal of biomedical informatics}, Elsevier Inc., v.~43, n.~1, p.
+  104--10, feb 2010.
+ISSN 1532-0480.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/19683067}.}
+
+\bibitem[BHATT e BHADKAMKAR 1959]{Report}
+\abntrefinfo{BHATT e BHADKAMKAR}{BHATT; BHADKAMKAR}{1959}
+{BHATT, V.~P.; BHADKAMKAR, A.~R. \emph{{Situs inversus totalis.}} 1959.
+  107--110~p.}
+
+\bibitem[Carrozzo et al. 2007]{Carrozzo2007}
+\abntrefinfo{Carrozzo et al.}{CARROZZO et al.}{2007}
+{CARROZZO, R. et al. {SUCLA2 mutations are associated with mild methylmalonic
+  aciduria, Leigh-like encephalomyopathy, dystonia and deafness}.
+\emph{Brain}, v.~130, n.~Pt 3, p. 862--874, mar 2007.
+ISSN 00068950.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/17301081}.}
+
+\bibitem[Choi et al. 2009]{Choi2009}
+\abntrefinfo{Choi et al.}{CHOI et al.}{2009}
+{CHOI, M. et al. {Genetic diagnosis by whole exome capture and massively
+  parallel DNA sequencing.}
+\emph{Proceedings of the National Academy of Sciences of the United States of
+  America}, v.~106, n.~45, p. 19096--101, nov 2009.
+ISSN 1091-6490.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/19861545}.}
+
+\bibitem[Chong et al. 2015]{Chong2015}
+\abntrefinfo{Chong et al.}{CHONG et al.}{2015}
+{CHONG, J.~X. et al. {The Genetic Basis of Mendelian Phenotypes: Discoveries,
+  Challenges, and Opportunities}.
+\emph{The American Journal of Human Genetics}, v.~97, n.~2, p. 199--215, aug
+  2015.
+ISSN 00029297.
+Dispon{\'\i}vel em:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0002929715002451}.}
+
+\bibitem[Cock et al. 2009]{Cock2009}
+\abntrefinfo{Cock et al.}{COCK et al.}{2009}
+{COCK, P. J.~a. et al. {The Sanger FASTQ file format for sequences with quality
+  scores, and the Solexa/Illumina FASTQ variants}.
+\emph{Nucleic Acids Research}, v.~38, n.~6, p. 1767--1771, apr 2009.
+ISSN 03051048.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2847217{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[Collins e Varmus 2015]{Collins2015}
+\abntrefinfo{Collins e Varmus}{COLLINS; VARMUS}{2015}
+{COLLINS, F.~S.; VARMUS, H. {A New Initiative on Precision Medicine.}
+\emph{The New England journal of medicine}, v.~372, n.~9, p. 793--5, jan 2015.
+ISSN 1533-4406.
+Dispon{\'\i}vel em: \url{http://www.nejm.org/doi/abs/10.1056/NEJMp1415160
+  http://www.ncbi.nlm.nih.gov/pubmed/25635347}.}
+
+\bibitem[Danecek et al. 2011]{Danecek2011}
+\abntrefinfo{Danecek et al.}{DANECEK et al.}{2011}
+{DANECEK, P. et al. {The variant call format and VCFtools.}
+\emph{Bioinformatics (Oxford, England)}, v.~27, n.~15, p. 2156--8, aug 2011.
+ISSN 1367-4811.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3137218{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[DePristo et al. 2011]{DePristo2011}
+\abntrefinfo{DePristo et al.}{DEPRISTO et al.}{2011}
+{DEPRISTO, M.~a. et al. {A framework for variation discovery and genotyping
+  using next-generation DNA sequencing data.}
+\emph{Nature genetics}, v.~43, n.~5, p. 491--8, may 2011.
+ISSN 1546-1718.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3083463{\&}tool=pmcentrez{\&}rendertype=abstract
+  www.ncbi.nlm.nih.gov/pubmed/21}.}
+
+\bibitem[Durbin et al. 2010]{Abecasis2010}
+\abntrefinfo{Durbin et al.}{DURBIN et al.}{2010}
+{DURBIN, R.~M. et al. {A map of human genome variation from population-scale
+  sequencing}.
+\emph{Nature}, v.~467, n.~7319, p. 1061--73, oct 2010.
+ISSN 0028-0836.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1038/nature09534
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3042601{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[Fernald et al. 2011]{Fernald2011a}
+\abntrefinfo{Fernald et al.}{FERNALD et al.}{2011}
+{FERNALD, G.~H. et al. {Bioinformatics challenges for personalized medicine.}
+\emph{Bioinformatics (Oxford, England)}, v.~27, n.~13, p. 1741--8, jul 2011.
+ISSN 1367-4811.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/21596790}.}
+
+\bibitem[Field et al. 2006]{Field2006}
+\abntrefinfo{Field et al.}{FIELD et al.}{2006}
+{FIELD, D. et al. {Open software for biologists: from famine to feast.}
+\emph{Nature biotechnology}, v.~24, n.~7, p. 801--3, jul 2006.
+ISSN 1087-0156.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/16841067}.}
+
+\bibitem[Fu et al. 2013]{Fu2013}
+\abntrefinfo{Fu et al.}{FU et al.}{2013}
+{FU, W. et al. {Analysis of 6,515 exomes reveals the recent origin of most
+  human protein-coding variants.}
+\emph{Nature}, v.~493, n.~7431, p. 216--20, jan 2013.
+ISSN 1476-4687.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/23201682}.}
+
+\bibitem[Gebbia et al. 1997]{Gebbia1997}
+\abntrefinfo{Gebbia et al.}{GEBBIA et al.}{1997}
+{GEBBIA, M. et al. {X-linked situs abnormalities result from mutations in
+  ZIC3.}
+\emph{Nature genetics}, 1997.}
+
+\bibitem[Gray et al. 2013]{Gray2013}
+\abntrefinfo{Gray et al.}{GRAY et al.}{2013}
+{GRAY, K.~a. et al. {Genenames.org: the HGNC resources in 2013.}
+\emph{Nucleic acids research}, v.~41, n. Database issue, p. D545--52, jan 2013.
+ISSN 1362-4962.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/23161694}.}
+
+\bibitem[Green et al. 2013]{Green2013}
+\abntrefinfo{Green et al.}{GREEN et al.}{2013}
+{GREEN, R.~C. et al. {ACMG recommendations for reporting of incidental findings
+  in clinical exome and genome sequencing.}
+\emph{Genetics in medicine : official journal of the American College of
+  Medical Genetics}, v.~15, n.~7, p. 565--74, jul 2013.
+ISSN 1530-0366.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3892767{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[Gymrek et al. 2012]{Gymrek2012}
+\abntrefinfo{Gymrek et al.}{GYMREK et al.}{2012}
+{GYMREK, M. et al. {lobSTR: A short tandem repeat profiler for personal
+  genomes}.
+\emph{Genome Research}, v.~22, n.~6, p. 1154--1162, 2012.
+ISSN 10889051.}
+
+\bibitem[Hal{\'{a}}sz et al. 2008]{Halasz2008}
+\abntrefinfo{Hal{\'{a}}sz et al.}{HAL{\'{A}}SZ et al.}{2008}
+{HAL{\'{A}}SZ, Z. et al. {Laterality disturbance and hypopituitarism. A case
+  report of co-existing situs inversus totalis and combined pituitary hormone
+  deficiency.}
+\emph{Journal of endocrinological investigation}, v.~31, n.~1, p. 74--8, jan
+  2008.
+ISSN 1720-8386.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/18296909}.}
+
+\bibitem[Haraksingh e Snyder 2013]{Haraksingh2013}
+\abntrefinfo{Haraksingh e Snyder}{HARAKSINGH; SNYDER}{2013}
+{HARAKSINGH, R.~R.; SNYDER, M.~P. {Impacts of variation in the human genome on
+  gene regulation}.
+\emph{Journal of Molecular Biology}, The Authors, v.~425, n.~21, p. 3970--3977,
+  2013.
+ISSN 00222836.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.jmb.2013.07.015}.}
+
+\bibitem[Hogeweg 2011]{Hogeweg2011}
+\abntrefinfo{Hogeweg}{HOGEWEG}{2011}
+{HOGEWEG, P. {The roots of bioinformatics in theoretical biology.}
+\emph{PLoS computational biology}, v.~7, n.~3, p. e1002021, mar 2011.
+ISSN 1553-7358.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/21483479}.}
+
+\bibitem[Homer, Merriman e Nelson 2009]{Homer2009}
+\abntrefinfo{Homer, Merriman e Nelson}{HOMER; MERRIMAN; NELSON}{2009}
+{HOMER, N.; MERRIMAN, B.; NELSON, S.~F. {BFAST: an alignment tool for large
+  scale genome resequencing.}
+\emph{PloS one}, v.~4, n.~11, p. e7767, jan 2009.
+ISSN 1932-6203.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/19907642
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2770639{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[Hu et al. 2015]{Hu2015}
+\abntrefinfo{Hu et al.}{HU et al.}{2015}
+{HU, H. et al. {X-exome sequencing of 405 unresolved families identifies seven
+  novel intellectual disability genes}.
+\emph{Molecular Psychiatry}, n. August 2014, p. 1--16, 2015.
+ISSN 1359-4184.
+Dispon{\'\i}vel em: \url{http://www.nature.com/doifinder/10.1038/mp.2014.193}.}
+
+\bibitem[Jameson e Longo 2015]{Jameson}
+\abntrefinfo{Jameson e Longo}{JAMESON; LONGO}{2015}
+{JAMESON, J.~L.; LONGO, D.~L. {Precision Medicine — Personalized,
+  Problematic, and Promising}.
+\emph{New England Journal of Medicine}, v.~372, n.~23, p. 2229--2234, jun 2015.
+ISSN 0028-4793.
+Dispon{\'\i}vel em: \url{http://www.nejm.org/doi/abs/10.1056/NEJMsb1503104}.}
+
+\bibitem[Kircher et al. 2014]{Kircher2014a}
+\abntrefinfo{Kircher et al.}{KIRCHER et al.}{2014}
+{KIRCHER, M. et al. {A general framework for estimating the relative
+  pathogenicity of human genetic variants.}
+\emph{Nature genetics}, Nature Publishing Group, v.~46, n.~3, p. 310--5, mar
+  2014.
+ISSN 1546-1718.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/24487276
+  http://www.nature.com/ng/journal/v46/n3/abs/ng.2892.html}.}
+
+\bibitem[Krumm et al. 2012]{Krumm2012a}
+\abntrefinfo{Krumm et al.}{KRUMM et al.}{2012}
+{KRUMM, N. et al. {Copy number variation detection and genotyping from exome
+  sequence data.}
+\emph{Genome research}, v.~22, n.~8, p. 1525--32, aug 2012.
+ISSN 1549-5469.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3409265{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[Kulikowski et al. 2012]{Kulikowski2012}
+\abntrefinfo{Kulikowski et al.}{KULIKOWSKI et al.}{2012}
+{KULIKOWSKI, C.~a. et al. {AMIA Board white paper: definition of biomedical
+  informatics and specification of core competencies for graduate education in
+  the discipline}.
+\emph{Journal of the American Medical Informatics Association}, v.~19, n.~6, p.
+  931--938, 2012.
+ISSN 1067-5027.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3534470{\&}tool=pmcentrez{\&}rendertype=abstract
+  http://www.ncbi.nlm.nih.gov/pubmed/22}.}
+
+\bibitem[Lander et al. 2001]{Lander2001}
+\abntrefinfo{Lander et al.}{LANDER et al.}{2001}
+{LANDER, E.~S. et al. {Initial sequencing and analysis of the human genome.}
+\emph{Nature}, v.~409, n.~6822, p. 860--921, feb 2001.
+ISSN 0028-0836.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/11237011}.}
+
+\bibitem[Langreth e Waldholz 1999]{Langreth1999}
+\abntrefinfo{Langreth e Waldholz}{LANGRETH; WALDHOLZ}{1999}
+{LANGRETH, R.; WALDHOLZ, M. {New Era of Personalized Medicine : Targeting Drugs
+  for Each Unique Genetic Profile}.
+\emph{The Oncologist}, v.~4, p. 426--427, 1999.
+ISSN 1549-490X.}
+
+\bibitem[Li e Durbin 2009]{Li2009b}
+\abntrefinfo{Li e Durbin}{LI; DURBIN}{2009}
+{LI, H.; DURBIN, R. {Fast and accurate short read alignment with
+  Burrows-Wheeler transform.}
+\emph{Bioinformatics (Oxford, England)}, v.~25, n.~14, p. 1754--60, jul 2009.
+ISSN 1367-4811.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2705234{\&}tool=pmcentrez{\&}rendertype=abstract
+  www.ncbi.nlm.nih.gov/pubmed/19}.}
+
+\bibitem[Li et al. 2012]{Li2012}
+\abntrefinfo{Li et al.}{LI et al.}{2012}
+{LI, J. et al. {CONTRA: copy number analysis for targeted resequencing.}
+\emph{Bioinformatics (Oxford, England)}, v.~28, n.~10, p. 1307--13, may 2012.
+ISSN 1367-4811.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/22474122
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3348560{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[Li et al. 2009]{Li2009a}
+\abntrefinfo{Li et al.}{LI et al.}{2009}
+{LI, R. et al. {SOAP2: An improved ultrafast tool for short read alignment}.
+\emph{Bioinformatics}, v.~25, n.~15, p. 1966--1967, 2009.
+ISSN 13674803.}
+
+\bibitem[Linhares et al. 2014]{Linhares2014b}
+\abntrefinfo{Linhares et al.}{LINHARES et al.}{2014a}
+{LINHARES, N. et al. {Short Communication Modulation of expressivity in
+  PDGFRB-related infantile myofibromatosis: a role for PTPRG?}
+\emph{Genetics and Molecular Research}, v.~13, n.~3, p. 6287--6292, 2014.
+ISSN 16765680.
+Dispon{\'\i}vel em:
+  \url{http://www.funpecrp.com.br/gmr/year2014/vol13-3/pdf/gmr5016.pdf}.}
+
+\bibitem[Linhares et al. 2014]{Linhares2014}
+\abntrefinfo{Linhares et al.}{LINHARES et al.}{2014b}
+{LINHARES, N.~D. et al. {Exome sequencing identifies a novel homozygous variant
+  in NDRG4 in a family with infantile myofibromatosis}.
+\emph{European Journal of Medical Genetics}, Elsevier Masson SAS, v.~57, n.
+  11-12, p. 643--648, 2014.
+ISSN 17697212.
+Dispon{\'\i}vel em:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1769721214001712}.}
+
+\bibitem[Liu, Jian e Boerwinkle 2011]{Liu2011b}
+\abntrefinfo{Liu, Jian e Boerwinkle}{LIU; JIAN; BOERWINKLE}{2011}
+{LIU, X.; JIAN, X.; BOERWINKLE, E. {dbNSFP: A lightweight database of human
+  nonsynonymous SNPs and their functional predictions}.
+\emph{Human Mutation}, v.~32, n.~8, p. 894--899, 2011.
+ISSN 10597794.}
+
+\bibitem[Maojo e Kulikowski 2003]{Practice2003}
+\abntrefinfo{Maojo e Kulikowski}{MAOJO; KULIKOWSKI}{2003}
+{MAOJO, V.; KULIKOWSKI, C.~A. {Bioinformatics and Medical Informatics:
+  Collaborations on the Road to Genomic Medicine?}
+\emph{Journal of the American Medical Informatics Association}, v.~10, n.~6, p.
+  515--522, nov 2003.
+ISSN 1067-5027.
+Dispon{\'\i}vel em:
+  \url{http://jamia.oxfordjournals.org/lookup/doi/10.1197/jamia.M1305}.}
+
+\bibitem[Martin-Sanchez et al. 2004]{Martin-Sanchez2004}
+\abntrefinfo{Martin-Sanchez et al.}{MARTIN-SANCHEZ et al.}{2004}
+{MARTIN-SANCHEZ, F. et al. {Synergy between medical informatics and
+  bioinformatics: facilitating genomic medicine for future health care}.
+\emph{Journal of Biomedical Informatics}, v.~37, n.~1, p. 30--42, feb 2004.
+ISSN 15320464.
+Dispon{\'\i}vel em:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1532046403000856}.}
+
+\bibitem[Middleton et al. 2015]{Middleton2015}
+\abntrefinfo{Middleton et al.}{MIDDLETON et al.}{2015}
+{MIDDLETON, A. et al. {Attitudes of nearly 7000 health professionals, genomic
+  researchers and publics toward the return of incidental results from
+  sequencing research}.
+\emph{European Journal of Human Genetics}, Nature Publishing Group, n.
+  February, p.~1--9, 2015.
+ISSN 1018-4813.
+Dispon{\'\i}vel em:
+  \url{http://www.nature.com/doifinder/10.1038/ejhg.2015.58}.}
+
+\bibitem[Neesen et al. 2001]{Neesen2001}
+\abntrefinfo{Neesen et al.}{NEESEN et al.}{2001}
+{NEESEN, J. et al. {Disruption of an inner arm dynein heavy chain gene results
+  in asthenozoospermia and reduced ciliary beat frequency.}
+\emph{Human molecular genetics}, v.~10, n.~11, p. 1117--28, may 2001.
+ISSN 0964-6906.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/11371505}.}
+
+\bibitem[Ng e Henikoff 2003]{Ng2003}
+\abntrefinfo{Ng e Henikoff}{NG; HENIKOFF}{2003}
+{NG, P.~C.; HENIKOFF, S. {SIFT: Predicting amino acid changes that affect
+  protein function.}
+\emph{Nucleic Acids Research}, v.~31, n.~13, p. 3812--3814, jul 2003.
+ISSN 1362-4962.
+Dispon{\'\i}vel em:
+  \url{http://nar.oxfordjournals.org/lookup/doi/10.1093/nar/gkg509
+  http://linkinghub.elsevier.com/retrieve/pii/S1077314208001331
+  http://www.ncbi.nlm.nih.gov/pubmed/12824425
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC168916}.}
+
+\bibitem[Ng et al. 2008]{Ng2008}
+\abntrefinfo{Ng et al.}{NG et al.}{2008}
+{NG, P.~C. et al. {Genetic variation in an individual human exome.}
+\emph{PLoS genetics}, v.~4, n.~8, p. e1000160, jan 2008.
+ISSN 1553-7404.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2493042{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[Ng et al. 2010]{Ng2010}
+\abntrefinfo{Ng et al.}{NG et al.}{2010}
+{NG, S.~B. et al. {Exome sequencing identifies the cause of a mendelian
+  disorder.}
+\emph{Nature genetics}, Nature Publishing Group, v.~42, n.~1, p. 30--5, jan
+  2010.
+ISSN 1546-1718.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1038/ng.499
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2847889{\&}tool=pmcentrez{\&}rendertype=abstract
+  www.ncbi.nlm.nih.gov/pubmed/19}.}
+
+\bibitem[Ng et al. 2009]{Ng2009}
+\abntrefinfo{Ng et al.}{NG et al.}{2009}
+{NG, S.~B. et al. {Targeted capture and massively parallel sequencing of 12
+  human exomes.}
+\emph{Nature}, Nature Publishing Group, v.~461, n.~7261, p. 272--6, sep 2009.
+ISSN 1476-4687.
+Dispon{\'\i}vel em: \url{www.ncbi.nlm.nih.gov/pubmed/19684571
+  http://dx.doi.org/10.1038/nature08250}.}
+
+\bibitem[Olbrich et al. 2002]{Olbrich2002}
+\abntrefinfo{Olbrich et al.}{OLBRICH et al.}{2002}
+{OLBRICH, H. et al. {Mutations in DNAH5 cause primary ciliary dyskinesia and
+  randomization of left-right asymmetry.}
+\emph{Nature genetics}, v.~30, n.~2, p. 143--144, feb 2002.
+ISSN 10614036.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/11788826}.}
+
+\bibitem[Perles et al. 2012]{Perles2012}
+\abntrefinfo{Perles et al.}{PERLES et al.}{2012}
+{PERLES, Z. et al. {A human laterality disorder associated with recessive
+  CCDC11 mutation.}
+\emph{Journal of medical genetics}, v.~49, n.~6, p. 386--90, jun 2012.
+ISSN 1468-6244.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/22577226}.}
+
+\bibitem[Rossum 1995]{python}
+\abntrefinfo{Rossum}{ROSSUM}{1995}
+{ROSSUM, G.~V. \emph{{Python Software Foundation. Python Language Reference,
+  version 2.7}}. 1995.}
+
+\bibitem[Stenson et al. 2009]{Stenson2009}
+\abntrefinfo{Stenson et al.}{STENSON et al.}{2009}
+{STENSON, P.~D. et al. {The Human Gene Mutation Database: 2008 update.}
+\emph{Genome medicine}, v.~1, n.~1, p.~13, jan 2009.
+ISSN 1756-994X.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2651586{\&}tool=pmcentrez{\&}rendertype=abstract
+  www.ncbi.nlm.nih.gov/pubmed/19}.}
+
+\bibitem[Taylor, Ponting e Copley 2004]{Taylor2004}
+\abntrefinfo{Taylor, Ponting e Copley}{TAYLOR; PONTING; COPLEY}{2004}
+{TAYLOR, M.~S.; PONTING, C.~P.; COPLEY, R.~R. {Occurrence and Consequences of
+  Coding Sequence Insertions and Deletions in Mammalian Genomes Occurrence and
+  Consequences of Coding Sequence Insertions and Deletions in Mammalian
+  Genomes}.
+p. 555--566, 2004.
+ISSN 1088-9051.}
+
+\bibitem[Venter et al. 2001]{Venter2001}
+\abntrefinfo{Venter et al.}{VENTER et al.}{2001}
+{VENTER, J.~C. et al. {The sequence of the human genome.}
+\emph{Science (New York, N.Y.)}, v.~291, n.~5507, p. 1304--1351, feb 2001.
+ISSN 0036-8075.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/11181995}.}
+
+\bibitem[Viaroli 2012]{Viaroli2012}
+\abntrefinfo{Viaroli}{VIAROLI}{2012}
+{VIAROLI, F. {Panhypopituitarism, a Cause of Early Sudden Infant Death
+  Syndrome?}
+\emph{Journal of Clinical Case Reports}, v.~02, n.~13, p.~2--4, 2012.
+ISSN 21657920.
+Dispon{\'\i}vel em:
+  \url{http://www.omicsgroup.org/journals/2165-7920/2165-7920-2-193.digital/2165-7920-2-193.html}.}
+
+\bibitem[Wang, Li e Hakonarson 2010]{Wang2010}
+\abntrefinfo{Wang, Li e Hakonarson}{WANG; LI; HAKONARSON}{2010}
+{WANG, K.; LI, M.; HAKONARSON, H. {ANNOVAR: functional annotation of genetic
+  variants from high-throughput sequencing data.}
+\emph{Nucleic acids research}, v.~38, n.~16, p.~e164, sep 2010.
+ISSN 1362-4962.
+Dispon{\'\i}vel em:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2938201{\&}tool=pmcentrez{\&}rendertype=ab}.}
+
+\bibitem[Yang et al. 2013]{Yang2013b}
+\abntrefinfo{Yang et al.}{YANG et al.}{2013}
+{YANG, Y. et al. {Clinical whole-exome sequencing for the diagnosis of
+  mendelian disorders.}
+\emph{The New England journal of medicine}, v.~369, n.~16, p. 1502--11, 2013.
+ISSN 1533-4406.
+Dispon{\'\i}vel em: \url{http://www.ncbi.nlm.nih.gov/pubmed/24088041}.}
+
+\end{thebibliography}

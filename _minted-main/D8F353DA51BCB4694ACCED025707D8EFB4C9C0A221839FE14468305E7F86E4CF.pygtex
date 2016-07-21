@@ -1,0 +1,108 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{django.db} \PYG{k+kn}{import} \PYG{n}{models}
+\PYG{k+kn}{from} \PYG{n+nn}{individuals.models} \PYG{k+kn}{import} \PYG{o}{*}
+
+\PYG{k}{class} \PYG{n+nc}{Variant}\PYG{p}{(}\PYG{n}{models}\PYG{o}{.}\PYG{n}{Model}\PYG{p}{):}
+    \PYG{n}{individual} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{ForeignKey}\PYG{p}{(}\PYG{n}{Individual}\PYG{p}{)}
+    
+    \PYG{n}{index} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}\PYG{c+c1}{\PYGZsh{}ex. 1\PYGZhy{}2387623\PYGZhy{}G\PYGZhy{}T}
+    \PYG{n}{pos\PYGZus{}index} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}\PYG{c+c1}{\PYGZsh{}ex. 1\PYGZhy{}326754756}
+
+    \PYG{c+c1}{\PYGZsh{}First save all 9 VCF columns}
+    \PYG{n+nb}{chr} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{n}{verbose\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Chr\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{pos} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{IntegerField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{variant\PYGZus{}id} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{n}{verbose\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}ID\PYGZdq{}}\PYG{p}{)}    
+    \PYG{n}{ref} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{alt} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{qual} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n+nb}{filter} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{)}
+    \PYG{n}{info} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{format} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    
+    \PYG{n}{genotype\PYGZus{}col} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{genotype} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{}metrics from genotype\PYGZus{}info DP field}
+    \PYG{n}{read\PYGZus{}depth} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{IntegerField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{n}{gene} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{mutation\PYGZus{}type} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{)}    
+    \PYG{n}{vartype} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{}Annotation From 1000genomes }
+    \PYG{n}{genomes1k\PYGZus{}maf} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{verbose\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}1000 Genomes Frequency\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{dbsnp\PYGZus{}maf} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{verbose\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}dbSNP Frequency\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{esp\PYGZus{}maf} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{verbose\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}ESP6500 Frequency\PYGZdq{}}\PYG{p}{)}
+    
+    \PYG{c+c1}{\PYGZsh{}dbsnp}
+    \PYG{c+c1}{\PYGZsh{} dbsnp\PYGZus{}pm = models.TextField(db\PYGZus{}index=True, null=True, blank=True)}
+    \PYG{c+c1}{\PYGZsh{} dbsnp\PYGZus{}clnsig = models.TextField(db\PYGZus{}index=True, null=True, blank=True)}
+    \PYG{n}{dbsnp\PYGZus{}build} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{IntegerField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    
+    \PYG{c+c1}{\PYGZsh{}VEP}
+    \PYG{n}{sift} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{sift\PYGZus{}pred} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{n}{polyphen2} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{polyphen2\PYGZus{}pred} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{n}{condel} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{condel\PYGZus{}pred} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{n}{vest} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{cadd} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{n}{cadd} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{rf\PYGZus{}score} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{ada\PYGZus{}score} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FloatField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{}hi\PYGZus{}index}
+    \PYG{c+c1}{\PYGZsh{} hi\PYGZus{}index\PYGZus{}str = models.TextField(null=True, blank=True)}
+    \PYG{c+c1}{\PYGZsh{} hi\PYGZus{}index = models.FloatField(db\PYGZus{}index=True, null=True, blank=True)}
+    \PYG{c+c1}{\PYGZsh{} hi\PYGZus{}index\PYGZus{}perc = models.FloatField(db\PYGZus{}index=True, null=True, blank=True)}
+
+    \PYG{c+c1}{\PYGZsh{}OMIM}
+    \PYG{n}{is\PYGZus{}at\PYGZus{}omim} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{BooleanField}\PYG{p}{(}\PYG{n}{default}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{}HGMD}
+    \PYG{n}{is\PYGZus{}at\PYGZus{}hgmd} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{BooleanField}\PYG{p}{(}\PYG{n}{default}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{)}
+    \PYG{n}{hgmd\PYGZus{}entries} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{}snpeff annotation}
+    \PYG{n}{snpeff\PYGZus{}effect} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{snpeff\PYGZus{}impact} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{snpeff\PYGZus{}func\PYGZus{}class} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{snpeff\PYGZus{}codon\PYGZus{}change} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{snpeff\PYGZus{}aa\PYGZus{}change} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} snpeff\PYGZus{}aa\PYGZus{}len = models.TextField(db\PYGZus{}index=True, null=True, blank=True)}
+    \PYG{n}{snpeff\PYGZus{}gene\PYGZus{}name} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{snpeff\PYGZus{}biotype} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{snpeff\PYGZus{}gene\PYGZus{}coding} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{snpeff\PYGZus{}transcript\PYGZus{}id} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{snpeff\PYGZus{}exon\PYGZus{}rank} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} snpeff\PYGZus{}genotype\PYGZus{}number = models.TextField(db\PYGZus{}index=True, null=True, blank=True)}
+
+    \PYG{c+c1}{\PYGZsh{}vep annotation}
+    \PYG{n}{vep\PYGZus{}allele} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}gene} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}feature} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}feature\PYGZus{}type} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}consequence} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}cdna\PYGZus{}position} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}cds\PYGZus{}position} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}protein\PYGZus{}position} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}amino\PYGZus{}acids} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}codons} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}existing\PYGZus{}variation} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}distance} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}strand} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}symbol} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}symbol\PYGZus{}source} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}sift} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}polyphen} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{vep\PYGZus{}condel} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+
+    \PYG{k}{def} \PYG{n+nf}{get\PYGZus{}fields}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+    	\PYG{k}{return} \PYG{p}{[(}\PYG{n}{field}\PYG{o}{.}\PYG{n}{name}\PYG{p}{,} \PYG{n}{field}\PYG{o}{.}\PYG{n}{verbose\PYGZus{}name}\PYG{o}{.}\PYG{n}{title}\PYG{p}{()}\PYG{o}{.}\PYG{n}{replace}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZus{}\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}}\PYG{p}{))} \PYG{k}{for} \PYG{n}{field} \PYG{o+ow}{in} \PYG{n}{Variant}\PYG{o}{.}\PYG{n}{\PYGZus{}meta}\PYG{o}{.}\PYG{n}{fields}\PYG{p}{]}
+\end{Verbatim}

@@ -1,0 +1,77 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/usr/bin/env python}
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}*\PYGZhy{} coding: utf\PYGZhy{}8 \PYGZhy{}*\PYGZhy{}}
+
+\PYG{k+kn}{from} \PYG{n+nn}{optparse} \PYG{k+kn}{import} \PYG{n}{OptionParser}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+
+\PYG{c+c1}{\PYGZsh{}python bwa.py \PYGZhy{}f reads1.fastq \PYGZhy{}q reads2.fastq}
+
+\PYG{n}{parser} \PYG{o}{=} \PYG{n}{OptionParser}\PYG{p}{()}
+\PYG{n}{usage} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}usage: \PYGZpc{}prog [options] \PYGZhy{}f reads1.fastq \PYGZhy{}q reads2.fastq\PYGZdq{}}
+\PYG{n}{parser} \PYG{o}{=} \PYG{n}{OptionParser}\PYG{p}{(}\PYG{n}{usage}\PYG{o}{=}\PYG{n}{usage}\PYG{p}{)}
+
+\PYG{n}{parser}\PYG{o}{.}\PYG{n}{add\PYGZus{}option}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}f\PYGZdq{}}\PYG{p}{,} \PYG{n}{dest}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}reads1\PYGZdq{}}\PYG{p}{,}
+                  \PYG{n}{help}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}reads 1 in FASTQ format\PYGZdq{}}\PYG{p}{,} \PYG{n}{metavar}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}FASTQ\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{parser}\PYG{o}{.}\PYG{n}{add\PYGZus{}option}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}q\PYGZdq{}}\PYG{p}{,} \PYG{n}{dest}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}reads2\PYGZdq{}}\PYG{p}{,}
+                  \PYG{n}{help}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}reads 2 in FASTQ format\PYGZdq{}}\PYG{p}{,} \PYG{n}{metavar}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}FASTQ\PYGZdq{}}\PYG{p}{)}
+                  
+\PYG{p}{(}\PYG{n}{options}\PYG{p}{,} \PYG{n}{args}\PYG{p}{)} \PYG{o}{=} \PYG{n}{parser}\PYG{o}{.}\PYG{n}{parse\PYGZus{}args}\PYG{p}{()}
+
+\PYG{n}{reads1}\PYG{o}{=}\PYG{n}{options}\PYG{o}{.}\PYG{n}{reads1}
+\PYG{n}{reads2}\PYG{o}{=}\PYG{n}{options}\PYG{o}{.}\PYG{n}{reads2}
+
+\PYG{n}{bwa\PYGZus{}dir}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/lgc/programs/bwa/\PYGZdq{}}
+\PYG{n}{st\PYGZus{}dir}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/lgc/programs/samtools\PYGZdq{}}
+\PYG{n}{reference}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/lgc/datasets/gatk\PYGZus{}data/b37/human\PYGZus{}g1k\PYGZus{}v37.fasta\PYGZdq{}}
+
+\PYG{k}{class} \PYG{n+nc}{Bwa}\PYG{p}{():}
+    \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{reads1}\PYG{p}{,} \PYG{n}{reads2}\PYG{p}{):}
+      \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} }
+\PYG{l+s+sd}{      Execute the alignment of the two fastq files from input.}
+
+\PYG{l+s+sd}{      \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+      \PYG{k}{print} \PYG{l+s+s2}{\PYGZdq{}Start Analysis...\PYGZdq{}}
+      \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{alignment}\PYG{p}{()}
+      \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{sai\PYGZus{}to\PYGZus{}sam}\PYG{p}{()}
+      \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{sam\PYGZus{}to\PYGZus{}bam}\PYG{p}{()}
+      \PYG{c+c1}{\PYGZsh{}self.clean\PYGZus{}files()}
+      
+    \PYG{k}{def} \PYG{n+nf}{alignment}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+      \PYG{k}{print} \PYG{l+s+s2}{\PYGZdq{}Aligning reads...\PYGZdq{}}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/bwa aln \PYGZhy{}t 24 \PYGZhy{}I }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ \PYGZgt{} reads1.sai\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{bwa\PYGZus{}dir}\PYG{p}{,} \PYG{n}{reference}\PYG{p}{,} \PYG{n}{reads1}\PYG{p}{)}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/bwa aln \PYGZhy{}t 24 \PYGZhy{}I }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ \PYGZgt{} reads2.sai\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{bwa\PYGZus{}dir}\PYG{p}{,} \PYG{n}{reference}\PYG{p}{,} \PYG{n}{reads2}\PYG{p}{)}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+      
+    \PYG{k}{def} \PYG{n+nf}{sai\PYGZus{}to\PYGZus{}sam}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+      \PYG{k}{print} \PYG{l+s+s2}{\PYGZdq{}Convert Sai to SAM\PYGZdq{}}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/bwa sampe }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ \PYGZhy{}r \PYGZdq{}@RG}\PYG{l+s+se}{\PYGZbs{}t}\PYG{l+s+s2}{ID:Exome}\PYG{l+s+se}{\PYGZbs{}t}\PYG{l+s+s2}{LB:Exome}\PYG{l+s+se}{\PYGZbs{}t}\PYG{l+s+s2}{SM:Exome}\PYG{l+s+se}{\PYGZbs{}t}\PYG{l+s+s2}{PL:ILLUMINA\PYGZdq{} reads1.sai reads2.sai }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ \PYGZgt{} exome.sam\PYGZdq{}\PYGZdq{}\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{bwa\PYGZus{}dir}\PYG{p}{,} \PYG{n}{reference}\PYG{p}{,} \PYG{n}{reads1}\PYG{p}{,} \PYG{n}{reads2}\PYG{p}{)}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+
+    \PYG{k}{def} \PYG{n+nf}{sam\PYGZus{}to\PYGZus{}bam}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+      \PYG{k}{print} \PYG{l+s+s2}{\PYGZdq{}Convert SAM to BAM\PYGZdq{}}
+      \PYG{c+c1}{\PYGZsh{}import BAM}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/samtools view \PYGZhy{}bS exome.sam \PYGZgt{} exome.bam\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{st\PYGZus{}dir}\PYG{p}{)}\PYG{c+c1}{\PYGZsh{}, reference}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+      \PYG{c+c1}{\PYGZsh{} \PYGZsh{}Sort BAM}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/samtools sort exome.bam exome.sorted\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{st\PYGZus{}dir}\PYG{p}{)}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+      \PYG{c+c1}{\PYGZsh{} \PYGZsh{}Index BAM}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/samtools index exome.sorted.bam exome.sorted.bam.bai\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{st\PYGZus{}dir}\PYG{p}{)}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+      \PYG{c+c1}{\PYGZsh{}Calmd}
+      \PYG{c+c1}{\PYGZsh{}command = \PYGZdq{}\PYGZpc{}s/samtools calmd \PYGZhy{}Abr exome.sorted.bam \PYGZpc{}s \PYGZgt{} exome.baq.bam\PYGZdq{} \PYGZpc{} (st\PYGZus{}dir, reference)}
+      \PYG{c+c1}{\PYGZsh{}os.system(command)}
+      
+    \PYG{k}{def} \PYG{n+nf}{clean\PYGZus{}files}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}rm exome.sam exome.bam reads1.sai reads2.sai\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{st\PYGZus{}dir}\PYG{p}{)}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}mv exome.sorted.bam exome.bam\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{st\PYGZus{}dir}\PYG{p}{)}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+      \PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}mv exome.sorted.bam.bai exome.bam.bai\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{st\PYGZus{}dir}\PYG{p}{)}
+      \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}
+
+\PYG{k}{if} \PYG{n}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZsq{}}\PYG{p}{:} 
+  \PYG{n}{Bwa}\PYG{p}{(}\PYG{n}{reads1}\PYG{p}{,} \PYG{n}{reads2}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,77 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/usr/bin/env python}
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}*\PYGZhy{} coding: utf\PYGZhy{}8 \PYGZhy{}*\PYGZhy{}}
+
+\PYG{k+kn}{from} \PYG{n+nn}{optparse} \PYG{k+kn}{import} \PYG{n}{OptionParser}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k+kn}{from} \PYG{n+nn}{time} \PYG{k+kn}{import} \PYG{n}{time}
+\PYG{k+kn}{import} \PYG{n+nn}{datetime}
+\PYG{k+kn}{import} \PYG{n+nn}{re}
+\PYG{c+c1}{\PYGZsh{}Example}
+\PYG{c+c1}{\PYGZsh{}python /projects/12exomes/data/unifiergenotyper.py \PYGZhy{}i /projects/12exomes/data/Exome\PYGZus{}3\PYGZus{}EDS.realigned\PYGZhy{}recalibrated.bam /projects/12exomes/data/Exome\PYGZus{}4\PYGZus{}ELS.realigned\PYGZhy{}recalibrated.bam /projects/12exomes/data/Exome\PYGZus{}5\PYGZus{}LS.realigned\PYGZhy{}recalibrated.bam /projects/12exomes/data/Exome\PYGZus{}6\PYGZus{}DC.realigned\PYGZhy{}recalibrated.bam \PYGZhy{}o quartet\PYGZus{}only\PYGZus{}SNPs\PYGZus{}.vcf \PYGZhy{}t /lgc/datasets/exome\PYGZus{}targets/SureSelect\PYGZus{}All\PYGZus{}Exon\PYGZus{}V2\PYGZus{}hg19.20110105.bed}
+
+
+\PYG{n}{\PYGZus{}\PYGZus{}author\PYGZus{}\PYGZus{}} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Raony Guimaraes\PYGZdq{}}
+\PYG{n}{\PYGZus{}\PYGZus{}copyright\PYGZus{}\PYGZus{}} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Copyright 2015, The Exome Pipeline\PYGZdq{}}
+\PYG{n}{\PYGZus{}\PYGZus{}credits\PYGZus{}\PYGZus{}} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Raony Guimaraes\PYGZdq{}}\PYG{p}{]}
+\PYG{n}{\PYGZus{}\PYGZus{}license\PYGZus{}\PYGZus{}} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}GPL\PYGZdq{}}
+\PYG{n}{\PYGZus{}\PYGZus{}version\PYGZus{}\PYGZus{}} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}1.0.1\PYGZdq{}}
+\PYG{n}{\PYGZus{}\PYGZus{}maintainer\PYGZus{}\PYGZus{}} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Raony Guimaraes\PYGZdq{}}
+\PYG{n}{\PYGZus{}\PYGZus{}email\PYGZus{}\PYGZus{}} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}raonyguimaraes@gmail.com\PYGZdq{}}
+\PYG{n}{\PYGZus{}\PYGZus{}status\PYGZus{}\PYGZus{}} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Production\PYGZdq{}}
+
+\PYG{c+c1}{\PYGZsh{}run example}
+\PYG{c+c1}{\PYGZsh{}python unifiergenotyper.py \PYGZhy{}i /projects/12exomes/data/Exome\PYGZus{}3\PYGZus{}EDS.realigned\PYGZhy{}recalibrated.bam /projects/12exomes/data/Exome\PYGZus{}4\PYGZus{}ELS.realigned\PYGZhy{}recalibrated.bam /projects/12exomes/data/Exome\PYGZus{}5\PYGZus{}LS.realigned\PYGZhy{}recalibrated.bam /projects/12exomes/data/Exome\PYGZus{}6\PYGZus{}DC.realigned\PYGZhy{}recalibrated.bam}
+
+\PYG{n}{parser} \PYG{o}{=} \PYG{n}{OptionParser}\PYG{p}{()}
+\PYG{n}{usage} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}usage: \PYGZpc{}prog [options] \PYGZhy{}f reads1.fastq \PYGZhy{}q reads2.fastq\PYGZdq{}}
+\PYG{n}{parser} \PYG{o}{=} \PYG{n}{OptionParser}\PYG{p}{(}\PYG{n}{usage}\PYG{o}{=}\PYG{n}{usage}\PYG{p}{)}
+
+\PYG{n}{parser}\PYG{o}{.}\PYG{n}{add\PYGZus{}option}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}i\PYGZdq{}}\PYG{p}{,} \PYG{n}{dest}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}input\PYGZus{}file\PYGZdq{}}\PYG{p}{,}
+                  \PYG{n}{help}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}BAM File Sorted in BAM format\PYGZdq{}}\PYG{p}{,} \PYG{n}{metavar}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}BAM\PYGZdq{}}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{}, nargs=12}
+\PYG{n}{parser}\PYG{o}{.}\PYG{n}{add\PYGZus{}option}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}t\PYGZdq{}}\PYG{p}{,} \PYG{n}{dest}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}target\PYGZus{}array\PYGZdq{}}\PYG{p}{,}
+                  \PYG{n}{help}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Target Array\PYGZdq{}}\PYG{p}{,} \PYG{n}{metavar}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}BEDFILE\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{parser}\PYG{o}{.}\PYG{n}{add\PYGZus{}option}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}o\PYGZdq{}}\PYG{p}{,} \PYG{n}{dest}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}output\PYGZdq{}}\PYG{p}{,}
+                  \PYG{n}{help}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Output Filename\PYGZdq{}}\PYG{p}{,} \PYG{n}{metavar}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}VCFFILE\PYGZdq{}}\PYG{p}{)}
+                  
+\PYG{p}{(}\PYG{n}{options}\PYG{p}{,} \PYG{n}{args}\PYG{p}{)} \PYG{o}{=} \PYG{n}{parser}\PYG{o}{.}\PYG{n}{parse\PYGZus{}args}\PYG{p}{()}
+
+\PYG{n}{input\PYGZus{}file}\PYG{o}{=}\PYG{n}{options}\PYG{o}{.}\PYG{n}{input\PYGZus{}file}
+
+\PYG{n}{filename} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}.\PYGZdq{}}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{input\PYGZus{}file}\PYG{o}{.}\PYG{n}{split}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}/\PYGZdq{}}\PYG{p}{)[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{split}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}.\PYGZdq{}}\PYG{p}{)[:}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{])}
+
+\PYG{n}{target\PYGZus{}array}\PYG{o}{=}\PYG{n}{options}\PYG{o}{.}\PYG{n}{target\PYGZus{}array}
+
+\PYG{c+c1}{\PYGZsh{}reference=\PYGZdq{}/lgc/datasets/gatk\PYGZus{}data/b37/human\PYGZus{}g1k\PYGZus{}v37.fasta\PYGZdq{}}
+\PYG{n}{reference}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/lgc/datasets/gatk\PYGZus{}data/b37/human\PYGZus{}g1k\PYGZus{}v37chr.fasta\PYGZdq{}}
+\PYG{c+c1}{\PYGZsh{}dbsnp=\PYGZdq{}/lgc/datasets/dbsnp/dbsnp\PYGZhy{}135chr.vcf\PYGZdq{}}
+
+\PYG{c+c1}{\PYGZsh{}reference=\PYGZdq{}/lgc/datasets/gatk\PYGZus{}data/b37/human\PYGZus{}g1k\PYGZus{}v37chr.fasta\PYGZdq{}}
+\PYG{c+c1}{\PYGZsh{}reference=\PYGZdq{}/lgc/datasets/hg19/all/hg19\PYGZus{}cancer.fasta\PYGZdq{}}
+\PYG{c+c1}{\PYGZsh{}reference=\PYGZdq{}/lgc/datasets/gatk\PYGZus{}data/hg19/ucsc.hg19.fasta\PYGZdq{}}
+\PYG{c+c1}{\PYGZsh{}dbsnp=\PYGZdq{}/lgc/datasets/dbsnp/137/00\PYGZhy{}All.vcf\PYGZdq{}}
+
+\PYG{n}{dbsnp}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/lgc/datasets/dbsnp/141/All.vcf\PYGZdq{}}
+
+\PYG{n}{gatk\PYGZus{}dir}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}/lgc/programs/GenomeAnalysisTK\PYGZhy{}3.1\PYGZhy{}1\PYGZdq{}}
+
+\PYG{n}{command} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+s2}{      java \PYGZhy{}Xmx40g \PYGZhy{}Djava.io.tmpdir=/projects/tmp \PYGZhy{}jar }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/GenomeAnalysisTK.jar \PYGZhy{}T UnifiedGenotyper }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}R }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}I }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}l INFO }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}\PYGZhy{}dbsnp }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}A AlleleBalance }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}stand\PYGZus{}call\PYGZus{}conf 50.0 }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}stand\PYGZus{}emit\PYGZus{}conf 10.0 }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}dcov 200 }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}o }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}log }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZhy{}UnifiedGenotyper.log }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}L }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZhy{}nt 16 }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{      \PYGZdq{}\PYGZdq{}\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{gatk\PYGZus{}dir}\PYG{p}{,} \PYG{n}{reference}\PYG{p}{,} \PYG{n}{input\PYGZus{}file}\PYG{p}{,} \PYG{n}{dbsnp}\PYG{p}{,} \PYG{n}{options}\PYG{o}{.}\PYG{n}{output}\PYG{p}{,} \PYG{n}{options}\PYG{o}{.}\PYG{n}{output}\PYG{p}{,} \PYG{n}{re}\PYG{o}{.}\PYG{n}{escape}\PYG{p}{(}\PYG{n}{target\PYGZus{}array}\PYG{p}{))}
+      
+
+\PYG{k}{print} \PYG{n}{command}
+\PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{n}{command}\PYG{p}{)}    
+\end{Verbatim}

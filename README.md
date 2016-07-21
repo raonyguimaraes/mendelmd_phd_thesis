@@ -17,5 +17,7 @@ pacman -S texlive-latexextra texlive-fontsextra
 yaourt -S abntex2 latex-enumitem minted
 
 Add to build with pdflatex the flag "--shell-escape" in order to build it correctly!
+Kile -> Settings -> Build -> PDFLATEX
+-interaction=nonstopmode --shell-escape '%source'
 
 Always run pdflatex twice to update the indexes.

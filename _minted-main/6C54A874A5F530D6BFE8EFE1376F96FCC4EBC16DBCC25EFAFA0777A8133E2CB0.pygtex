@@ -1,0 +1,72 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{django.db} \PYG{k+kn}{import} \PYG{n}{models}
+\PYG{k+kn}{from} \PYG{n+nn}{django.contrib.auth.models} \PYG{k+kn}{import} \PYG{n}{User}
+\PYG{k+kn}{from} \PYG{n+nn}{django.conf} \PYG{k+kn}{import} \PYG{n}{settings}
+\PYG{k+kn}{from} \PYG{n+nn}{django.utils.text} \PYG{k+kn}{import} \PYG{n}{slugify}
+\PYG{k+kn}{from} \PYG{n+nn}{datetime} \PYG{k+kn}{import} \PYG{n}{datetime}
+
+\PYG{k}{class} \PYG{n+nc}{UserGroup}\PYG{p}{(}\PYG{n}{models}\PYG{o}{.}\PYG{n}{Model}\PYG{p}{):}
+    \PYG{n}{name} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{600}\PYG{p}{)}
+    \PYG{n}{members} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{ManyToManyField}\PYG{p}{(}\PYG{n}{User}\PYG{p}{,} \PYG{n}{editable}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{related\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}members\PYGZdq{}}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}unicode\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{k}{return} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name}
+
+\PYG{k}{class} \PYG{n+nc}{Individual}\PYG{p}{(}\PYG{n}{models}\PYG{o}{.}\PYG{n}{Model}\PYG{p}{):}
+    \PYG{k}{def} \PYG{n+nf}{get\PYGZus{}upload\PYGZus{}path}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{filename}\PYG{p}{):}
+        \PYG{n}{string} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/genomes/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{settings}\PYG{o}{.}\PYG{n}{BASE\PYGZus{}DIR}\PYG{p}{,} \PYG{n}{slugify}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{user}\PYG{o}{.}\PYG{n}{username}\PYG{p}{),} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{id}\PYG{p}{,} \PYG{n}{filename}\PYG{p}{)}\PYG{c+c1}{\PYGZsh{}.replace(\PYGZsq{} \PYGZsq{}, \PYGZsq{}\PYGZus{}\PYGZsq{})}
+        \PYG{k}{return} \PYG{n}{string} 
+    \PYG{n}{user} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{ForeignKey}\PYG{p}{(}\PYG{n}{User}\PYG{p}{,} \PYG{n}{editable}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{)}
+
+    \PYG{n}{shared\PYGZus{}with\PYGZus{}users} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{ManyToManyField}\PYG{p}{(}\PYG{n}{User}\PYG{p}{,} \PYG{n}{editable}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{related\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}shared\PYGZus{}with\PYGZus{}users\PYGZdq{}}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{shared\PYGZus{}with\PYGZus{}groups} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{ManyToManyField}\PYG{p}{(}\PYG{n}{UserGroup}\PYG{p}{,} \PYG{n}{editable}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{related\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}shared\PYGZus{}with\PYGZus{}groups\PYGZdq{}}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{n}{name} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{600}\PYG{p}{)}
+    \PYG{n}{is\PYGZus{}featured} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{BooleanField}\PYG{p}{(}\PYG{n}{default}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{is\PYGZus{}public} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{BooleanField}\PYG{p}{(}\PYG{n}{default}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{)}
+    \PYG{n}{vcf\PYGZus{}file} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FileField}\PYG{p}{(}\PYG{n}{upload\PYGZus{}to}\PYG{o}{=}\PYG{n}{get\PYGZus{}upload\PYGZus{}path}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{help\PYGZus{}text}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}File Format: VCF\PYGZdq{}}\PYG{p}{,}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{600}\PYG{p}{)}
+    \PYG{n}{vcf\PYGZus{}header} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{status} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{editable}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{)}
+    \PYG{n}{n\PYGZus{}variants} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{IntegerField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{editable}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{)}
+    \PYG{n}{n\PYGZus{}lines} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{IntegerField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{editable}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{)}
+
+    \PYG{n}{creation\PYGZus{}date} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{DateTimeField}\PYG{p}{(}\PYG{n}{auto\PYGZus{}now\PYGZus{}add}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{modified\PYGZus{}date} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{DateTimeField}\PYG{p}{(}\PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{n}{annotation\PYGZus{}time} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{200}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{insertion\PYGZus{}time} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{200}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{insertion\PYGZus{}time\PYGZus{}mongo} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{200}\PYG{p}{,} \PYG{n}{null}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+
+    \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}unicode\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+	\PYG{k}{return} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name}
+    \PYG{k}{def} \PYG{n+nf}{save}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{):}
+        \PYG{k}{if} \PYG{o+ow}{not} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{creation\PYGZus{}date}\PYG{p}{:}
+            \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{creation\PYGZus{}date} \PYG{o}{=} \PYG{n}{datetime}\PYG{o}{.}\PYG{n}{now}\PYG{p}{()}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{modified\PYGZus{}date} \PYG{o}{=} \PYG{n}{datetime}\PYG{o}{.}\PYG{n}{now}\PYG{p}{()}
+        \PYG{k}{return} \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{Individual}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n}{save}\PYG{p}{(}\PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{)}
+
+\PYG{k}{class} \PYG{n+nc}{Group}\PYG{p}{(}\PYG{n}{models}\PYG{o}{.}\PYG{n}{Model}\PYG{p}{):}
+    \PYG{n}{name} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{128}\PYG{p}{)}
+    \PYG{n}{members} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{ManyToManyField}\PYG{p}{(}\PYG{n}{Individual}\PYG{p}{)}
+    
+    \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}unicode\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{k}{return} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name}
+
+\PYG{k}{class} \PYG{n+nc}{ControlGroup}\PYG{p}{(}\PYG{n}{models}\PYG{o}{.}\PYG{n}{Model}\PYG{p}{):}
+    \PYG{n}{name} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{CharField}\PYG{p}{(}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{600}\PYG{p}{)}
+    \PYG{n}{vcf\PYGZus{}file} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{FileField}\PYG{p}{(}\PYG{n}{upload\PYGZus{}to}\PYG{o}{=}\PYG{n}{get\PYGZus{}upload\PYGZus{}path}\PYG{p}{,} \PYG{n}{blank}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{help\PYGZus{}text}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}File Format: VCF\PYGZdq{}}\PYG{p}{,}\PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{600}\PYG{p}{)}
+
+    \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}unicode\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{k}{return} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name}
+
+    \PYG{k}{def} \PYG{n+nf}{save}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{):}
+        \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{ControlGroup}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n}{save}\PYG{p}{(}\PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{)}
+        \PYG{n}{PopulateControls}\PYG{o}{.}\PYG{n}{delay}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{id}\PYG{p}{)}
+
+    \PYG{k}{def} \PYG{n+nf}{get\PYGZus{}upload\PYGZus{}path}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{filename}\PYG{p}{):}
+        \PYG{n}{string} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}upload/controls/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{id}\PYG{p}{,} \PYG{n}{filename}\PYG{p}{)}\PYG{c+c1}{\PYGZsh{}.replace(\PYGZsq{} \PYGZsq{}, \PYGZsq{}\PYGZus{}\PYGZsq{})}
+        \PYG{k}{return} \PYG{n}{string}
+
+\PYG{k}{class} \PYG{n+nc}{ControlVariant}\PYG{p}{(}\PYG{n}{models}\PYG{o}{.}\PYG{n}{Model}\PYG{p}{):}
+    \PYG{n}{controlgroup} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{ForeignKey}\PYG{p}{(}\PYG{n}{ControlGroup}\PYG{p}{)}
+    \PYG{n}{index} \PYG{o}{=} \PYG{n}{models}\PYG{o}{.}\PYG{n}{TextField}\PYG{p}{(}\PYG{n}{db\PYGZus{}index}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}\PYG{c+c1}{\PYGZsh{}ex. 1\PYGZhy{}2387623\PYGZhy{}G\PYGZhy{}T}
+\end{Verbatim}
